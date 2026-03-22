@@ -64,14 +64,14 @@ body {
 }
 
 .nav-logo a {
-    color: var(--accent-color);
+    color: #fff;
     font-size: 2rem;
     font-weight: 400;
     text-decoration: none;
     transition: var(--transition);
     font-family: 'Parisienne', cursive;
     letter-spacing: 0.02em;
-    text-shadow: 0 2px 8px rgba(0, 191, 255, 0.3);
+    text-shadow: none;
     font-style: normal;
 }
 
@@ -1045,6 +1045,14 @@ section {
 
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card:last-child:nth-child(odd) {
+        max-width: 100%;
     }
 
     .about-stats {
