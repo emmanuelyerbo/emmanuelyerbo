@@ -5,9 +5,9 @@
 const hamburger = document.getElementById('hamburger');
 const navMenu = document.getElementById('navMenu');
 
-hamburger.addEventListener('click', function() {
+hamburger.addEventListener('click', function () {
     navMenu.classList.toggle('active');
-    
+
     // Animate hamburger
     const spans = hamburger.querySelectorAll('span');
     if (navMenu.classList.contains('active')) {
@@ -63,9 +63,6 @@ function handleScroll() {
         link.classList.remove('active');
         if (link.getAttribute('href').slice(1) === current) {
             link.classList.add('active');
-            link.style.color = 'var(--accent-color)';
-        } else {
-            link.style.color = '#fff';
         }
     });
 }
@@ -131,65 +128,7 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
-// ===========================
-// CONTACT FORM HANDLING
-// (Fix Issue 1: Proper form submission with Formspree fallback to mailto)
-// ===========================
 
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-
-        // Get form data using name attributes
-        const name = this.querySelector('input[name="name"]').value;
-        const email = this.querySelector('input[name="email"]').value;
-        const subject = this.querySelector('input[name="subject"]').value;
-        const message = this.querySelector('textarea[name="message"]').value;
-
-        // Validate form
-        if (!name || !email || !subject || !message) {
-            alert('Please fill in all fields');
-            return;
-        }
-
-        // Try Formspree submission first
-        const formData = new FormData(this);
-        const submitBtn = this.querySelector('button[type="submit"]');
-        const originalText = submitBtn.textContent;
-        submitBtn.textContent = 'Sending...';
-        submitBtn.disabled = true;
-
-        fetch(this.action, {
-            method: 'POST',
-            body: formData,
-            headers: {
-                'Accept': 'application/json'
-            }
-        })
-        .then(response => {
-            if (response.ok) {
-                alert('Message sent successfully! Thank you for reaching out.');
-                this.reset();
-            } else {
-                // Fallback to mailto if Formspree fails
-                const mailtoLink = `mailto:emmanuelyerbo@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
-                window.location.href = mailtoLink;
-                alert('Opening your email client as a fallback. Please send your message.');
-            }
-        })
-        .catch(() => {
-            // Fallback to mailto on network error
-            const mailtoLink = `mailto:emmanuelyerbo@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
-            window.location.href = mailtoLink;
-            alert('Opening your email client as a fallback. Please send your message.');
-        })
-        .finally(() => {
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-        });
-    });
-}
 
 // ===========================
 // SMOOTH SCROLL ENHANCEMENT
@@ -198,7 +137,7 @@ if (contactForm) {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
-        
+
         // Don't interfere with modal links
         if (!href.includes('-modal')) {
             e.preventDefault();
@@ -222,7 +161,7 @@ const observerOptions = {
     rootMargin: '0px 0px -50px 0px'
 };
 
-const observer = new IntersectionObserver(function(entries) {
+const observer = new IntersectionObserver(function (entries) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.style.opacity = '1';
@@ -233,7 +172,7 @@ const observer = new IntersectionObserver(function(entries) {
 }, observerOptions);
 
 // Observe skill cards, project cards, and stat cards
-document.querySelectorAll('.skill-card, .project-card, .stat-card, .contact-card').forEach(el => {
+document.querySelectorAll('.skill-card, .project-card, .stat-card').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
@@ -295,4 +234,52 @@ document.querySelectorAll('a[href^="mailto:"]').forEach(emailLink => {
     });
 });
 
-console.log('Portfolio website loaded successfully!');
+// ===========================
+// SCROLL TO TOP
+// ===========================
+
+const scrollToTopBtn = document.getElementById('scrollToTop');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+        scrollToTopBtn.classList.add('visible');
+    } else {
+        scrollToTopBtn.classList.remove('visible');
+    }
+});
+
+scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// ===========================
+// COUNT-UP ANIMATION FOR STATS
+// ===========================
+
+function animateCountUp(el, target, duration) {
+    let start = 0;
+    const increment = target / (duration / 16);
+    const timer = setInterval(() => {
+        start += increment;
+        if (start >= target) {
+            el.textContent = target;
+            clearInterval(timer);
+        } else {
+            el.textContent = Math.floor(start);
+        }
+    }, 16);
+}
+
+const statItems = document.querySelectorAll('.stat-item');
+const statsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const target = parseInt(entry.target.dataset.target);
+            const numberEl = entry.target.querySelector('.stat-number');
+            animateCountUp(numberEl, target, 1500);
+            statsObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.5 });
+
+statItems.forEach(item => statsObserver.observe(item));

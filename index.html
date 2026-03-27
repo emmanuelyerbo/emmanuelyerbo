@@ -26,7 +26,7 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar">
+    <nav class="navbar" aria-label="Main Navigation">
         <div class="nav-container">
 <div class="nav-logo">
     <a href="https://github.com/emmanuelyerbo">Emmanuel Yerbo</a>
@@ -37,7 +37,7 @@
                 <a href="#skills" class="nav-link">Services</a>
                 <a href="#projects" class="nav-link">Projects</a>
             </div>
-            <div class="hamburger" id="hamburger">
+            <div class="hamburger" id="hamburger" aria-label="Toggle navigation" role="button" tabindex="0">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -63,11 +63,11 @@
                 <!-- Left Side: Images (50% - 2 columns like Kibui) -->
                 <div class="about-images-container">
                     <div class="about-image-column">
-                        <img src="images/geoai.jpg" alt="GeoAI" class="about-img">
-                        <img src="images/planes.png" alt="Remote Sensing" class="about-img">
+                        <img src="images/geoai.jpg" alt="GeoAI" class="about-img" loading="lazy">
+                        <img src="images/planes.png" alt="Remote Sensing" class="about-img" loading="lazy">
                     </div>
                     <div class="about-image-column about-image-middle">
-                        <img src="images/Road Density.jpg" alt="Road Density Analysis" class="about-img">
+                        <img src="images/Road Density.jpg" alt="Road Density Analysis" class="about-img" loading="lazy">
                     </div>
                 </div>
                 
@@ -440,6 +440,7 @@
             <p><strong>Impact:</strong> This AI-powered approach significantly speeds up flood assessment compared to manual methods, supporting rapid disaster response.</p>
         </div>
     </div>
+
 
     <!-- Footer -->
     <footer class="footer">
