@@ -11,16 +11,45 @@
     <meta property="og:title" content="Emmanuel Yerbo - GIS Specialist & Geospatial Data Analyst">
     <meta property="og:description" content="Transforming spatial data into actionable insights for environmental monitoring, urban planning, and disaster management.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="background_image.jpg">
+    <meta property="og:image" content="https://emmanuelyerbo.com/images/background_image.jpg">
     <meta property="og:url" content="https://emmanuelyerbo.com">
     
     <!-- Twitter Card Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Emmanuel Yerbo - GIS Specialist & Geospatial Data Analyst">
     <meta name="twitter:description" content="Transforming spatial data into actionable insights for environmental monitoring, urban planning, and disaster management.">
-    <meta name="twitter:image" content="background_image.jpg">
+    <meta name="twitter:image" content="https://emmanuelyerbo.com/images/background_image.jpg">
+    <meta name="twitter:image:alt" content="Emmanuel Yerbo GIS Portfolio">
     
-    <title>Emmanuel Yerbo - GIS Specialist & Geospatial Data Analyst</title>
+    <title>Emmanuel Yerbo - GIS Specialist &amp; Geospatial Data Analyst</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/geoai.png">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Preload hero background -->
+    <link rel="preload" as="image" href="images/background_image.jpg">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Emmanuel Yerbo",
+      "jobTitle": "GIS Specialist & Geospatial Data Analyst",
+      "url": "https://emmanuelyerbo.com",
+      "email": "emmanuelyerbo@gmail.com",
+      "telephone": "+233553776346",
+      "sameAs": [
+        "https://www.linkedin.com/in/emmanuelyerbo",
+        "https://github.com/Emmanuel-Yerbo"
+      ]
+    }
+    </script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -54,6 +83,35 @@
             <!-- hero buttons removed per request -->
         </div>
         <div class="hero-overlay"></div>
+        <!-- Scroll down indicator -->
+        <div class="scroll-indicator" aria-hidden="true">
+            <span class="scroll-text">Scroll Down</span>
+            <div class="scroll-arrow"><i class="fas fa-chevron-down"></i></div>
+        </div>
+    </section>
+
+    <!-- Stats Banner -->
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-target="30">
+                    <div class="stat-number-wrap"><span class="stat-number">0</span><span class="stat-suffix">+</span></div>
+                    <p class="stat-label">ESRI Certifications</p>
+                </div>
+                <div class="stat-item" data-target="20">
+                    <div class="stat-number-wrap"><span class="stat-number">0</span><span class="stat-suffix">+</span></div>
+                    <p class="stat-label">Mapping Solutions Built</p>
+                </div>
+                <div class="stat-item" data-target="5">
+                    <div class="stat-number-wrap"><span class="stat-number">0</span><span class="stat-suffix"></span></div>
+                    <p class="stat-label">Research Projects</p>
+                </div>
+                <div class="stat-item" data-target="87">
+                    <div class="stat-number-wrap"><span class="stat-number">0</span><span class="stat-suffix">%</span></div>
+                    <p class="stat-label">U-Net Model Accuracy</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- About Me Section (Matching Kibui Layout: 50% images + 50% text) -->
@@ -77,7 +135,7 @@
                     <p class="about-intro">A GIS Developer, GeoAI, Spatial Researcher, ML/DL Scientist and Data Analyst.</p>
                     
                     <ul class="about-list">
-                        <li>Over 30 Certification from ESRI</li>
+                        <li>Over 30 Certifications from ESRI</li>
                         <li>Built 20+ Mapping Solutions</li>
                         <li>Served as a Teaching Assistant for GIS and Remote Sensing</li>
                         <li>Specialized in ArcGIS, QGIS, PostGIS, Leaflet, Python, PyTorch and TensorFlow</li>
@@ -479,6 +537,11 @@
             </div>
         </div>
     </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
