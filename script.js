@@ -273,11 +273,15 @@ function animateCountUp(el, target, duration) {
 const statItems = document.querySelectorAll('.stat-item');
 const statsObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
+        const numberEl = entry.target.querySelector('.stat-number');
         if (entry.isIntersecting) {
             const target = parseInt(entry.target.dataset.target);
-            const numberEl = entry.target.querySelector('.stat-number');
             animateCountUp(numberEl, target, 1500);
-            statsObserver.unobserve(entry.target);
+        } else {
+            // Reset to 0 when it leaves the viewport so it's ready to re-animate
+            if (numberEl) {
+                numberEl.textContent = "0";
+            }
         }
     });
 }, { threshold: 0.5 });
