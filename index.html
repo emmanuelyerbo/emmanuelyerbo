@@ -297,6 +297,20 @@
                         <p class="project-desc">Trained a U-Net deep learning model for automatic flood segmentation achieving 87% accuracy and 72% IoU. Successfully applied to 2023 Akosombo Dam spillage images with explainable AI (Grad-CAM) heatmaps.</p>
                     </div>
                 </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <a href="#project6-modal" onclick="openModal('project6-modal')">
+                            <img src="images/pre_trained.jpg" alt="Building Footprint Extraction using Pretrained Models" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>Building Footprint Extraction using Pretrained Models</h3>
+                        <p class="project-tech">ArcGIS | Deep Learning | Feature Extraction | Living Atlas</p>
+                        <p class="project-desc">Evaluated and compared ArcGIS pretrained models (USA vs. Africa) for extracting building footprints from African satellite imagery, highlighting the importance of fine-tuning for regional accuracy.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -496,6 +510,42 @@
             </ul>
             
             <p><strong>Impact:</strong> This AI-powered approach significantly speeds up flood assessment compared to manual methods, supporting rapid disaster response.</p>
+        </div>
+    </div>
+
+    <!-- Project 6 Modal -->
+    <div id="project6-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project6-modal')">&times;</span>
+            <h2>Building Footprint Extraction using Pretrained Models</h2>
+            
+            <h3>Overview</h3>
+            <p>A <strong>building footprint</strong> is a vectorized 2-dimensional polygon representing the physical outline of a building’s exterior walls on a map.</p>
+            
+            <h3>What are Pretrained Models?</h3>
+            <p>A pretrained model is a machine learning algorithm previously trained on a large dataset for a specific task, which can be reused or fine-tuned for related problems. In geospatial analysis, ArcGIS offers various pretrained models, including task-specific models and generalized vision-language models. These models are hosted on the <strong>ArcGIS Living Atlas of the World</strong>.</p>
+            
+            <h3>Feature Extraction</h3>
+            <p>Feature extraction involves automatically identifying and isolating objects like roads, buildings, water bodies, or vegetation from satellite or aerial imagery using deep learning techniques.</p>
+            
+            <h3>Experiment & Findings</h3>
+            <p>An experiment was conducted using two ArcGIS pretrained models to extract building footprints for a location in Africa:</p>
+            <ol>
+                <li><strong>Building Extraction Model (USA)</strong></li>
+                <li><strong>Building Extraction Model (Africa)</strong></li>
+            </ol>
+            
+            <h4>Key Observations</h4>
+            <p>Surprisingly, the <strong>USA model performed better</strong> in extracting building footprints for this specific African location.</p>
+            <ul>
+                <li><strong>Map A</strong> shows the original satellite image.</li>
+                <li><strong>Map B</strong> displays the extracted building footprints using the model.</li>
+            </ul>
+            
+            <p><strong>Conclusion:</strong> It is evident that not all buildings were detected. This highlights a crucial principle of machine learning: pretrained models perform best when applied to data similar to what they were trained on. This suggests that <strong>fine-tuning the models with local data is necessary</strong> to improve extraction accuracy and reliability for specific regions.</p>
+            
+            <h3>Why Use Pretrained Models?</h3>
+            <p>Pretrained models save significant time and computational resources compared to training a model from scratch, making them incredibly valuable tools for geospatial applications and rapid analysis.</p>
         </div>
     </div>
 
