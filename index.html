@@ -1,411 +1,787 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Emmanuel Yerbo - Geospatial Data Scientist, Regional Planner & GeoAI Researcher. First Class Honours (3.82/4.00), Three-Time Dean's Award Recipient, Teaching Assistant at UCC, PyTorch GeoAI & Earth Observation.">
-  <title>Emmanuel Yerbo | GeoAI Researcher & Geospatial Data Scientist</title>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Emmanuel Yerbo - GIS Specialist & Geospatial Data Analyst based in Cape Coast, Ghana. First Class Honours (3.82/4.00), Three-Time Dean's Award Recipient at UCC, PyTorch GeoAI & Earth Observation.">
+    <meta name="keywords" content="GIS, Geospatial, Remote Sensing, ArcGIS, QGIS, Google Earth Engine, Ghana, Emmanuel Yerbo, Spatial Analysis, Environmental Research, GeoAI">
+    <meta name="author" content="Emmanuel Yerbo">
+    
+    <!-- Open Graph / Social Media Tags -->
+    <meta property="og:title" content="Emmanuel Yerbo - GIS Specialist & Geospatial Data Analyst">
+    <meta property="og:description" content="Transforming spatial data into actionable insights for environmental monitoring, urban planning, and disaster management.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/background_image.jpg">
+    <meta property="og:url" content="https://emmanuelyerbo.github.io/emmanuelyerbo/">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Emmanuel Yerbo - GIS Specialist & Geospatial Data Analyst">
+    <meta name="twitter:description" content="Transforming spatial data into actionable insights for environmental monitoring, urban planning, and disaster management.">
+    <meta name="twitter:image" content="images/background_image.jpg">
+    
+    <title>Emmanuel Yerbo - GIS Specialist &amp; Geospatial Data Analyst</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/geoai.png">
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- Preload hero background -->
+    <link rel="preload" as="image" href="images/background_image.jpg">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Emmanuel Yerbo",
+      "jobTitle": "GIS Specialist & Geospatial Data Analyst",
+      "url": "https://emmanuelyerbo.github.io/emmanuelyerbo/",
+      "email": "emmanuelyerbo@gmail.com",
+      "telephone": "+233553776346",
+      "sameAs": [
+        "https://www.linkedin.com/in/emmanuelyerbo",
+        "https://github.com/Emmanuel-Yerbo",
+        "https://orcid.org/0009-0008-8968-6999"
+      ]
+    }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" aria-label="Main Navigation">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="https://github.com/Emmanuel-Yerbo">Emmanuel Yerbo</a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About Me</a>
+                <a href="#skills" class="nav-link">Services</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#masterclasses" class="nav-link">Masterclasses</a>
+                <a href="#publications" class="nav-link">Publications</a>
+            </div>
+            <div class="hamburger" id="hamburger" aria-label="Toggle navigation" role="button" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-  <!-- NAVIGATION -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#hero" class="nav-brand">
-        <span class="brand-code">&lt;EY /&gt;</span>
-        <span class="brand-name">Emmanuel Yerbo</span>
-      </a>
-      
-      <div class="nav-links" id="navLinks">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#projects" class="nav-link">20 Flagship GeoAI</a>
-        <a href="#masterclasses" class="nav-link">GIS Masterclasses</a>
-        <a href="#methodology" class="nav-link">Methodology</a>
-        <a href="#experience" class="nav-link">Experience</a>
-        <a href="#publications" class="nav-link">Scholarly Works</a>
-        <a href="#contact" class="nav-link btn-nav">Contact</a>
-      </div>
-      
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Emmanuel Yerbo</h1>
+            <p class="hero-tagline">GIS Specialist &amp; Geospatial Data Analyst</p>
+            <p class="hero-description">Transforming spatial data into actionable insights for environmental monitoring, urban planning, and disaster management.</p>
+        </div>
+        <div class="hero-overlay"></div>
+        <!-- Scroll down indicator -->
+        <div class="scroll-indicator" aria-hidden="true">
+            <span class="scroll-text">Scroll Down</span>
+            <div class="scroll-arrow"><i class="fas fa-chevron-down"></i></div>
+        </div>
+    </section>
+
+    <!-- Stats Banner -->
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-target="30">
+                    <div class="stat-number-wrap"><span class="stat-number">0</span><span class="stat-suffix">+</span></div>
+                    <p class="stat-label">ESRI Certifications</p>
+                </div>
+                <div class="stat-item" data-target="20">
+                    <div class="stat-number-wrap"><span class="stat-number">0</span><span class="stat-suffix">+</span></div>
+                    <p class="stat-label">Mapping Solutions Built</p>
+                </div>
+                <div class="stat-item" data-target="20">
+                    <div class="stat-number-wrap"><span class="stat-number">0</span><span class="stat-suffix"></span></div>
+                    <p class="stat-label">Flagship Research Projects</p>
+                </div>
+                <div class="stat-item" data-target="3">
+                    <div class="stat-number-wrap"><span class="stat-number">0</span><span class="stat-suffix">x</span></div>
+                    <p class="stat-label">Dean's Award Recipient</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section (Matching Original 50/50 Layout) -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <!-- Left Side: Original Images Collage -->
+                <div class="about-images-container">
+                    <div class="about-image-column">
+                        <img src="images/geoai.jpg" alt="GeoAI" class="about-img" loading="lazy">
+                        <img src="images/planes.png" alt="Remote Sensing" class="about-img" loading="lazy">
+                    </div>
+                    <div class="about-image-column about-image-middle">
+                        <img src="images/Road Density.jpg" alt="Road Density Analysis" class="about-img" loading="lazy">
+                    </div>
+                </div>
+                
+                <!-- Right Side: About Text -->
+                <div class="about-text">
+                    <h3 class="about-heading">About</h3>
+                    <p class="about-intro">A Geospatial Data Scientist, Regional Planner, and Machine Learning Researcher based in Ghana.</p>
+                    
+                    <ul class="about-list">
+                        <li>Graduated with <strong>First Class Honours (CGPA: 3.82 / 4.00)</strong> in BSc Geography and Regional Planning from the University of Cape Coast (UCC), Ghana.</li>
+                        <li><strong>Three-Time Recipient of the Dean's Award for Academic Excellence</strong> (2021, 2022, 2023) in the Faculty of Social Sciences, UCC.</li>
+                        <li>Served as a departmental <strong>Teaching and Research Assistant</strong> in GIS and Remote Sensing at UCC, mentoring over 100 undergraduate students.</li>
+                        <li>Placed <strong>Top 5 Globally (16.45 AP)</strong> in the 2026 Cyber2A Arctic GeoAI Challenge and <strong>2nd Place</strong> in the Esri Map4Impact Hackathon.</li>
+                        <li>Over 30 professional certifications from ESRI in Spatial Data Science, Climate Action, Cartography, and Spatial Analysis.</li>
+                        <li>Specialized in PyTorch, GeoPandas, Google Earth Engine, PostGIS, QGIS, ArcGIS Pro, and R Spatial.</li>
+                    </ul>
+                    
+                    <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                        <a href="https://orcid.org/0009-0008-8968-6999" target="_blank" rel="noopener" class="btn btn-secondary">
+                            <i class="fab fa-orcid"></i> ORCID: 0009-0008-8968-6999
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Services Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Services Offered</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="images/spatial analysis.png" alt="GIS & Spatial Analysis">
+                    </div>
+                    <h3>GIS &amp; Spatial Analysis</h3>
+                    <p>Expert in ArcGIS Pro, QGIS, and spatial statistics for mapping, cadastral zoning, terrain modeling, and demographic analysis.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="images/remote sensing.png" alt="Remote Sensing & Cartography">
+                    </div>
+                    <h3>Remote Sensing &amp; Cartography</h3>
+                    <p>Proficient in Sentinel-2, Landsat, and UAV drone imagery processing, multi-temporal LULC classification, NDVI calculation, and publication-quality maps.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="images/programming.png" alt="Geospatial Programming">
+                    </div>
+                    <h3>Geospatial Programming</h3>
+                    <p>Strong programming background in Python (GeoPandas, Shapely, Rasterio, OSMnx), R (terra, sf), and SQL for spatial data pipelines and automation.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="images/geoai.png" alt="GeoAI & Machine Learning">
+                    </div>
+                    <h3>GeoAI &amp; Machine Learning</h3>
+                    <p>Hands-on development of PyTorch 1D/2D CNNs, SegFormer, SAMGeo, Vision Transformers, and U-Net models strictly validated using spatial block cross-validation.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="images/environmental research.png" alt="Environmental Research">
+                    </div>
+                    <h3>Environmental &amp; Climate Research</h3>
+                    <p>Specialized in urban heat island dynamics, permafrost thaw slump monitoring, multi-criteria flood susceptibility mapping, and watershed geomorphometry.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <img src="images/teaching.png" alt="Technical Teaching">
+                    </div>
+                    <h3>Technical Teaching &amp; Mentorship</h3>
+                    <p>Experienced in instructing university students, authoring structured geospatial curriculum, and leading community participatory mapping initiatives with YouthMappers.</p>
+                </div>
+            </div>
+
+            <div class="tools-section">
+                <h3>Tools &amp; Technologies</h3>
+                <div class="tools-list">
+                    <span class="tool-badge">ArcGIS Pro</span>
+                    <span class="tool-badge">QGIS</span>
+                    <span class="tool-badge">Google Earth Engine</span>
+                    <span class="tool-badge">Python</span>
+                    <span class="tool-badge">PyTorch</span>
+                    <span class="tool-badge">GeoPandas</span>
+                    <span class="tool-badge">PostGIS</span>
+                    <span class="tool-badge">R Spatial</span>
+                    <span class="tool-badge">SQL</span>
+                    <span class="tool-badge">OSMnx</span>
+                    <span class="tool-badge">Uber H3</span>
+                    <span class="tool-badge">PyDeck 3D</span>
+                    <span class="tool-badge">SAMGeo</span>
+                    <span class="tool-badge">TorchGeo</span>
+                    <span class="tool-badge">ENVI</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects &amp; Research</h2>
+            <p class="section-subtitle">Click on any project to view the detailed case study, methodology, and results</p>
+            
+            <div class="projects-grid">
+                <!-- Project 1: VegHealthCNN -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <a href="#veghealth-modal" onclick="openModal('veghealth-modal')">
+                            <img src="images/veghealth_architecture.png" alt="VegHealthCNN Architecture" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>VegHealthCNN: 1D-CNN for Precision Agriculture</h3>
+                        <p class="project-tech">PyTorch | Sentinel-2 | Spatial Block CV | Precision Farming</p>
+                        <p class="project-desc">A 57k-parameter 1D-CNN trained on Sentinel-2 multi-temporal reflectance achieving 98.7% test accuracy across 301 spatially isolated field samples, projecting a 19.5% reduction in synthetic nitrogen demand.</p>
+                    </div>
+                </div>
+
+                <!-- Project 2: FrostWatch Arctic -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <a href="#frostwatch-modal" onclick="openModal('frostwatch-modal')">
+                            <img src="images/frostwatch_audit.jpg" alt="FrostWatch Arctic Thaw Slump Segmentation" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>FrostWatch Arctic: Permafrost Thaw Slump Segmentation</h3>
+                        <p class="project-tech">UNet++ | DeepLabV3+ | 13-Channel Tensor | Top 5 Globally</p>
+                        <p class="project-desc">Three-arm semantic segmentation ensemble fusing multi-spectral bands with terrain curvature and slope, placing Top 5 globally (16.45 AP) in the 2026 Cyber2A Arctic Challenge.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3: Building Extraction -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <a href="#building-modal" onclick="openModal('building-modal')">
+                            <img src="images/building_eval.png" alt="Building Footprint Extraction" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>Nationwide Building Footprint Extraction with SegFormer</h3>
+                        <p class="project-tech">SegFormer-B3 | TorchGeo | 30cm Aerial | Boundary Snapping</p>
+                        <p class="project-desc">Fine-tuned SegFormer-B3 resolving contiguous zinc roof alleys across dense informal settlements in Accra and Kumasi, achieving 57.9% IoU where global catalogs merge dwellings.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4: Flood Prediction with U-Net & Grad-CAM -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <a href="#flood-unet-modal" onclick="openModal('flood-unet-modal')">
+                            <img src="images/gradcam_flood.png" alt="Flood Prediction with Grad-CAM" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>Flood Prediction &amp; Explainability with Grad-CAM</h3>
+                        <p class="project-tech">U-Net | PyTorch | Grad-CAM | Drone UAV Imagery</p>
+                        <p class="project-desc">Trained a U-Net model on aerial drone imagery from the 2023 Akosombo Dam spillage (87% accuracy, 72% IoU), using Grad-CAM heatmaps to verify neural focus on floodwaters rather than asphalt shadows.</p>
+                    </div>
+                </div>
+
+                <!-- Project 5: SAMGeo -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <a href="#samgeo-modal" onclick="openModal('samgeo-modal')">
+                            <img src="images/project4_image.png" alt="Image Segmentation with SAMGeo" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>Zero-Shot Campus Landmark Segmentation with SAMGeo</h3>
+                        <p class="project-tech">SAMGeo | Meta SAM | Vision Transformers | Zero-shot</p>
+                        <p class="project-desc">Operationalized Meta AI's Segment Anything Model (SAM) for remote sensing, successfully segmenting key campus landmarks (Sam Jonah Library, Lecture Theater) with zero task retraining.</p>
+                    </div>
+                </div>
+
+                <!-- Project 6: GEE Flood Risk Mapping -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <a href="#gee-flood-modal" onclick="openModal('gee-flood-modal')">
+                            <img src="images/project1_image.jpg" alt="Flood Risk Mapping in Volta Region" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>Flood Susceptibility Modeling in Google Earth Engine</h3>
+                        <p class="project-tech">Google Earth Engine | MERIT HAND | SRTM 30m | AHP Overlay</p>
+                        <p class="project-desc">Cloud-native multi-criteria weighted overlay fusing elevation, HAND, slope, land cover, and 24-year JRC water recurrence, identifying 37.5% of the Lower Volta Basin as high-to-severe flood risk.</p>
+                    </div>
+                </div>
+
+                <!-- Project 7: Urban Heat Island Dynamics -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <a href="#lst-modal" onclick="openModal('lst-modal')">
+                            <img src="images/Road Density.jpg" alt="Urban Heat Island Dynamics" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>24-Year Urban Heat Island Dynamics &amp; PySAL Hotspots</h3>
+                        <p class="project-tech">Landsat TIR | PySAL | Getis-Ord Gi* | Moran's I</p>
+                        <p class="project-desc">Undergraduate Honors Thesis tracking 24 years (2000–2024) of thermal infrared satellite imagery, proving statistically significant outward migration of thermal hotspots into peri-urban Accra.</p>
+                    </div>
+                </div>
+
+                <!-- Project 8: 15-Minute City Network Isochrones -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <a href="#walk-modal" onclick="openModal('walk-modal')">
+                            <img src="images/planes.png" alt="15-Minute City Network Isochrones" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>15-Minute City Network Isochrones &amp; Healthcare Equity</h3>
+                        <p class="project-tech">OSMnx | NetworkX Dijkstra | Uber H3 | PyDeck 3D</p>
+                        <p class="project-desc">Constructed walkable road graph networks across Greater Accra, discovering that 41.8% of peri-urban residents live outside the 15-minute walking catchment of public healthcare facilities.</p>
+                    </div>
+                </div>
+
+                <!-- Project 9: Traffic Accident Geocoding (GeoNLP) -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <a href="#geonlp-modal" onclick="openModal('geonlp-modal')">
+                            <img src="images/accident_heatmap.jpg" alt="GeoNLP Traffic Accident Geocoding" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>Road Traffic Accident Geocoding &amp; Hotspots (GeoNLP)</h3>
+                        <p class="project-tech">spaCy NER | Custom Gazetteer | Levenshtein | DBSCAN</p>
+                        <p class="project-desc">Automated NLP and spatial clustering pipeline scraping Ghanaian news articles, geocoding accident descriptions (94.2% entity recall), and mapping spatial crash blackspots.</p>
+                    </div>
+                </div>
+
+                <!-- Project 10: Building Footprint Pretrained Models -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <a href="#pretrained-modal" onclick="openModal('pretrained-modal')">
+                            <img src="images/pre_trained.jpg" alt="Building Footprint Extraction using Pretrained Models" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>Evaluating Pretrained Deep Learning Models for Buildings</h3>
+                        <p class="project-tech">ArcGIS Living Atlas | Deep Learning | Feature Extraction</p>
+                        <p class="project-desc">Evaluated and benchmarked ArcGIS pretrained models (USA vs. Africa) on African high-resolution imagery, demonstrating the necessity of fine-tuning on regional architectural geometries.</p>
+                    </div>
+                </div>
+
+                <!-- Project 11: Watershed Analysis -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <a href="#watershed-modal" onclick="openModal('watershed-modal')">
+                            <img src="images/project3_image.png" alt="Watershed Analysis" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>Watershed &amp; Catchment Delineation: Sawla-Tuna-Kalba</h3>
+                        <p class="project-tech">SRTM DEM | D8 Flow Direction | Hydrological Modeling</p>
+                        <p class="project-desc">Delineated contributing watershed drainage areas for multiple river outlets (1,405 km² to 1,432 km²) using digital elevation models and flow accumulation algorithms for water planning.</p>
+                    </div>
+                </div>
+
+                <!-- Project 12: NDVI Sentinel-2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <a href="#ndvi-modal" onclick="openModal('ndvi-modal')">
+                            <img src="images/project2_image.png" alt="NDVI Vegetation Monitoring" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="project-content">
+                        <h3>Vegetation Phenology &amp; NDVI Monitoring in GEE</h3>
+                        <p class="project-tech">Sentinel-2 MSI | Cloud Masking | GEE API | Phenology</p>
+                        <p class="project-desc">Automated Sentinel-2 surface reflectance processing in Google Earth Engine, calculating seasonal NDVI vegetation health indices across farming communities in Ghana.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Explore More Research Banner -->
+            <div class="cta-banner">
+                <h3>Explore the Complete 20-Project Research Suite</h3>
+                <p>All 20 end-to-end GeoAI pipelines, including Vision Transformers, VideoMAE bushfire forecasting, GEDI LiDAR biomass, and Discrete Global Grid Systems (Uber H3), are open-source and documented on GitHub.</p>
+                <a href="https://github.com/Emmanuel-Yerbo/GEOAI" target="_blank" rel="noopener" class="btn btn-primary">
+                    <i class="fab fa-github"></i> Inspect Emmanuel-Yerbo/GEOAI
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Masterclasses & Applied Geospatial Engineering Section -->
+    <section id="masterclasses" class="masterclasses-section">
+        <div class="container">
+            <h2 class="section-title">Applied GIS &amp; Database Masterclasses</h2>
+            <p class="section-subtitle">Comprehensive open curricula authored and maintained for spatial data scientists and urban planners</p>
+            
+            <div class="masterclass-grid">
+                <!-- Masterclass 1: Python for Urban Spatial Analytics -->
+                <div class="masterclass-card">
+                    <span class="masterclass-tag"><i class="fab fa-python"></i> 13-Chapter Curriculum</span>
+                    <h3>Python for Urban Spatial Analytics</h3>
+                    <p>A hands-on, modular masterclass teaching Python spatial data science from foundational vector operations to machine learning on urban geometries.</p>
+                    <div class="chapter-pills-list">
+                        <span class="chapter-pill-item">Ch 01-03: GeoPandas &amp; Cadastral Vector Ops</span>
+                        <span class="chapter-pill-item">Ch 04-06: OSMnx Road Networks &amp; Livability</span>
+                        <span class="chapter-pill-item">Ch 07-09: 15-Min Isochrones &amp; PyDeck 3D</span>
+                        <span class="chapter-pill-item">Ch 10-13: H3 DGGS, Momepy &amp; Urban LST</span>
+                    </div>
+                    <a href="https://github.com/Emmanuel-Yerbo/GIS/tree/main/Python%20for%20Urban%20Analysis" target="_blank" rel="noopener" class="btn btn-secondary" style="margin-top: auto;">
+                        <i class="fab fa-github"></i> View Python Masterclass
+                    </a>
+                </div>
+
+                <!-- Masterclass 2: Enterprise PostGIS -->
+                <div class="masterclass-card">
+                    <span class="masterclass-tag"><i class="fas fa-database"></i> 10 SQL Chapters</span>
+                    <h3>Enterprise PostGIS Database Masterclass</h3>
+                    <p>Production SQL suite covering enterprise spatial databases, spatial indexing, topology, routing, and in-database spatial analytics.</p>
+                    <div class="chapter-pills-list">
+                        <span class="chapter-pill-item">Ch 01-03: Geodesy, Projections &amp; Spatial ETL</span>
+                        <span class="chapter-pill-item">Ch 04-06: Morphometrics, Voronoi &amp; pgRouting</span>
+                        <span class="chapter-pill-item">Ch 07-08: H3 Hexagonal Binning &amp; Isochrones</span>
+                        <span class="chapter-pill-item">Ch 09-10: Huff Gravity Modeling &amp; Spatial Stats</span>
+                    </div>
+                    <a href="https://github.com/Emmanuel-Yerbo/GIS/tree/main/postgis_masterclass" target="_blank" rel="noopener" class="btn btn-secondary" style="margin-top: auto;">
+                        <i class="fab fa-github"></i> View PostGIS Suite
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications & Academic Work Section -->
+    <section id="publications" class="publications-section">
+        <div class="container">
+            <h2 class="section-title">Publications &amp; Academic Presentations</h2>
+            <p class="section-subtitle">Conference presentations, research drafts, and undergraduate honors thesis</p>
+
+            <div class="pub-list">
+                <div class="pub-item">
+                    <span class="pub-badge-year">2026 • Conference Presentation</span>
+                    <h3 class="pub-title">GeoAI-Driven Precision Health Classification and Variable-Rate Nitrogen Prescribing in Ghana Using a 1D-CNN and Spatial Block Cross-Validation</h3>
+                    <p class="pub-author"><strong>Emmanuel Yerbo</strong></p>
+                    <p class="pub-venue">GeoAI for Sustainable Development Conference (GeoAI4SD 2026)</p>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-badge-year">2026 • Conference Presentation</span>
+                    <h3 class="pub-title">Vision Transformers and Tree SHAP for Explainable Land Use / Land Cover Phenology in Transition Agro-Pastoral Savannahs</h3>
+                    <p class="pub-author"><strong>Emmanuel Yerbo</strong></p>
+                    <p class="pub-venue">Ghana Geographical Association (GGA) Annual Conference</p>
+                </div>
+
+                <div class="pub-item">
+                    <span class="pub-badge-year">2024 • Undergraduate Honors Thesis</span>
+                    <h3 class="pub-title">24-Year Urban Heat Island Dynamics and Microclimatic Spatial Autocorrelation Trajectories in Greater Accra (2000–2024)</h3>
+                    <p class="pub-author"><strong>Emmanuel Yerbo</strong> (Supervised at Department of Geography and Regional Planning, UCC)</p>
+                    <p class="pub-venue">University of Cape Coast Institutional Repository | First Class Honours (GPA 3.82/4.00)</p>
+                </div>
+            </div>
+
+            <div class="orcid-link-wrap">
+                <a href="https://orcid.org/0009-0008-8968-6999" target="_blank" rel="noopener" class="orcid-link">
+                    <i class="fab fa-orcid"></i> View Verified ORCID Record (0009-0008-8968-6999)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT MODALS (Original Human Phrasing) -->
+
+    <!-- Modal 1: VegHealthCNN -->
+    <div id="veghealth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('veghealth-modal')">&times;</span>
+            <h2>VegHealthCNN: Spectral-Temporal 1D-CNN for Precision Agriculture</h2>
+            <p><strong>Tools &amp; Technologies:</strong> PyTorch, Sentinel-2 L2A, Spatial Block Cross-Validation, GroupKFold</p>
+            
+            <h3>Project Overview</h3>
+            <p>Smallholder farms across sub-Saharan Africa feature complex crop mosaics and varying soil fertility. Standard blanket fertilizer application leads to nutrient waste and high agricultural runoff. This project uses a custom 1D-Convolutional Neural Network to classify crop health and prescribe variable-rate nitrogen.</p>
+            
+            <h3>Methodology &amp; Data</h3>
+            <p>We ingested multi-temporal Sentinel-2 surface reflectance signatures across Ghana. To prevent data leakage caused by spatial autocorrelation (Tobler's First Law), we evaluated the model using <strong>Spatial Block Cross-Validation</strong> (GroupKFold across 0.01° spatial grids) instead of naive random splitting.</p>
+            
+            <h3>Results &amp; Findings</h3>
+            <ul>
+                <li><strong>98.7% Test Accuracy</strong> across 301 spatially isolated field samples (compared to 99.4% in naive random split with proximity leakage).</li>
+                <li><strong>97.5% Producer Accuracy</strong> specifically on stressed crop pixels.</li>
+                <li>Variable-rate fertilizer prescriptions project an estimated <strong>19.5% reduction in synthetic nitrogen demand</strong> (~4.02 million kg N savings).</li>
+            </ul>
+            
+            <p><strong>GitHub Source:</strong> <a href="https://github.com/Emmanuel-Yerbo/GEOAI/tree/main/01_VegHealthCNN" target="_blank" rel="noopener">Inspect 01_VegHealthCNN Code on GitHub</a></p>
+        </div>
     </div>
-  </nav>
 
-  <!-- HERO SECTION -->
-  <header class="hero-section" id="hero">
-    <div class="container hero-container">
-      <div class="hero-badge">
-        <span class="badge-dot"></span> First Class Honours (CGPA 3.82 / 4.00) | Three-Time Dean's Award Recipient | IELTS 7.5 (C1)
-      </div>
-      
-      <h1 class="hero-title">
-        Bridging <span class="gradient-text">Statutory Spatial Planning</span> with <span class="gradient-text-alt">Computational GeoAI</span>
-      </h1>
-      
-      <p class="hero-subtitle">
-        Departmental Teaching & Research Assistant in GIS & Remote Sensing at the University of Cape Coast (UCC), Ghana. Author of the 20-project GEOAI Research Suite and 13-Chapter Urban Analysis Masterclass. Engineering deep learning architectures (Custom 1D/2D CNNs, SegFormer, Meta DINOv3, SAMGeo, VideoMAE) and Earth observation pipelines strictly validated against spatial autocorrelation bias (Tobler's First Law) for climate-resilient territorial governance.
-      </p>
-      
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary"><i class="fas fa-layer-group"></i> Explore 20 Flagship Projects</a>
-        <a href="https://github.com/Emmanuel-Yerbo/GEOAI" target="_blank" rel="noopener" class="btn btn-secondary"><i class="fab fa-github"></i> GEOAI Suite (GitHub)</a>
-        <a href="https://github.com/Emmanuel-Yerbo/GIS" target="_blank" rel="noopener" class="btn btn-secondary"><i class="fas fa-book-open"></i> GIS Masterclass (GitHub)</a>
-        <a href="https://orcid.org/0009-0008-8968-6999" target="_blank" rel="noopener" class="btn btn-secondary"><i class="fab fa-orcid"></i> ORCID Record</a>
-      </div>
-      
-      <div class="hero-stats-grid">
-        <div class="stat-card">
-          <div class="stat-value">3.82<span class="stat-unit">/4.00</span></div>
-          <div class="stat-desc">CGPA (First Class Honours, UCC)</div>
+    <!-- Modal 2: FrostWatch Arctic -->
+    <div id="frostwatch-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('frostwatch-modal')">&times;</span>
+            <h2>FrostWatch Arctic: Retrogressive Thaw Slump Segmentation</h2>
+            <p><strong>Distinction:</strong> Top 5 Globally (16.45 AP) in the 2026 Cyber2A Arctic Challenge</p>
+            <p><strong>Tools &amp; Technologies:</strong> UNet++, DeepLabV3+, MAnet, 13-Channel Geomorphometric Tensor</p>
+            
+            <h3>Project Overview</h3>
+            <p>Rapid Arctic warming causes permafrost to thaw into retrogressive thaw slumps, creating abrupt terrain collapse that threatens roads, pipelines, and communities. This project uses deep semantic segmentation to detect thaw slumps from satellite imagery.</p>
+            
+            <h3>Methodology &amp; Input Tensor</h3>
+            <p>We built a three-arm mean-fusion ensemble combining UNet++ (SE-ResNeXt50), DeepLabV3+ (EfficientNet-B5), and MAnet (MiT-B5). Models were fed with an engineered 13-channel geomorphometric input tensor combining optical bands with terrain slope, curvature, and elevation data.</p>
+            
+            <h3>Results &amp; Impact</h3>
+            <ul>
+                <li>Placed <strong>5th internationally (16.45 AP)</strong> among 15 international research teams in the Cyber2A Arctic Challenge.</li>
+                <li>Improved boundary detection recall on small thaw slumps (&lt;500 m²) by +24.3%.</li>
+                <li>Provides an operational terrain hazard screening pipeline for northern infrastructure protection.</li>
+            </ul>
+            
+            <p><strong>GitHub Source:</strong> <a href="https://github.com/Emmanuel-Yerbo/GEOAI/tree/main/02_FrostWatch_Arctic" target="_blank" rel="noopener">Inspect 02_FrostWatch_Arctic Code on GitHub</a></p>
         </div>
-        <div class="stat-card">
-          <div class="stat-value">20<span class="stat-unit">Projects</span></div>
-          <div class="stat-desc">Production GeoAI Pipelines</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-value">3-Time<span class="stat-unit">Award</span></div>
-          <div class="stat-desc">Dean's Award for Academic Excellence</div>
-        </div>
-        <div class="stat-card">
-          <div class="stat-value">Top 5<span class="stat-unit">Global</span></div>
-          <div class="stat-desc">Cyber2A Arctic GeoAI Challenge</div>
-        </div>
-      </div>
     </div>
-  </header>
 
-  <!-- ABOUT & ACADEMIC PILLARS -->
-  <section class="section about-section" id="about">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-tag">Academic Heritage & Research Philosophy</div>
-        <h2 class="section-title">The "T-Shaped" Geospatial Profile</h2>
-        <p class="section-subtitle">
-          Computer scientists frequently ignore spatial dependence (Tobler's First Law), while classical geographers lack deep neural network implementation skills. My trajectory bridges both worlds.
-        </p>
-      </div>
-
-      <div class="grid grid-3">
-        <div class="pillar-card">
-          <div class="pillar-icon"><i class="fas fa-map-marked-alt"></i></div>
-          <h3>1. Regional Planning Domain</h3>
-          <p>
-            BSc in Geography and Regional Planning from UCC with First Class Honours. Municipal experience at the Physical Planning Department formulating statutory Medium-Term Development Plans (MTDP), cadastral zoning schemes, and resolving customary stool vs. municipal land tenure conflicts.
-          </p>
+    <!-- Modal 3: Building Extraction -->
+    <div id="building-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('building-modal')">&times;</span>
+            <h2>Nationwide Building Footprint Extraction with SegFormer</h2>
+            <p><strong>Tools &amp; Technologies:</strong> SegFormer-B3, TorchGeo, 30cm Aerial Imagery, ONNX Runtime</p>
+            
+            <h3>Project Overview</h3>
+            <p>Dense informal urbanization across West African metropolitan cores features contiguous corrugated zinc roofs separated by narrow alleys (&lt;1.5m). Off-the-shelf global building models frequently merge entire settlements into large, irregular polygons.</p>
+            
+            <h3>Methodology &amp; Findings</h3>
+            <p>We fine-tuned a SegFormer-B3 architecture using TorchGeo spatial samplers over 30cm aerial orthomosaics across Ghana. Applying boundary distance transform regularization helped separate closely spaced roofs.</p>
+            <ul>
+                <li>Achieved <strong>57.9% Intersection over Union (IoU)</strong> and 84.6% precision, effectively resolving narrow alleys in Accra and Kumasi.</li>
+                <li>Exported optimized ONNX runtime weights for local municipal edge inference.</li>
+            </ul>
+            
+            <p><strong>GitHub Source:</strong> <a href="https://github.com/Emmanuel-Yerbo/GEOAI/tree/main/03_Building_Extraction" target="_blank" rel="noopener">Inspect 03_Building_Extraction Code on GitHub</a></p>
         </div>
-
-        <div class="pillar-card">
-          <div class="pillar-icon"><i class="fas fa-brain"></i></div>
-          <h3>2. Methodological Rigor & GeoAI</h3>
-          <p>
-            Custom PyTorch 1D/2D CNNs, SegFormer, Meta DINOv3, SAMGeo, VideoMAE, and Google Earth Engine. Zero data leakage enforced through <strong>Spatial Block Cross-Validation (GroupKFold over 0.01° grids)</strong> to systematically eliminate spatial autocorrelation bias.
-          </p>
-        </div>
-
-        <div class="pillar-card">
-          <div class="pillar-icon"><i class="fas fa-users-cog"></i></div>
-          <h3>3. Pedagogy & Enterprise Spatial Engineering</h3>
-          <p>
-            Instructed 100+ undergraduate students as Teaching Assistant. Authored the 13-Chapter <em>Python for Urban Spatial Analytics Masterclass</em> and 10-Chapter <em>PostGIS Enterprise Database Suite</em>. YouthMappers Organizer mobilizing participatory OpenStreetMap campaigns.
-          </p>
-        </div>
-      </div>
     </div>
-  </section>
 
-  <!-- 4-TIER NARRATIVE EXPLAINER -->
-  <section class="section narrative-section" id="methodology">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-tag">Scientific Standard</div>
-        <h2 class="section-title">The 4-Tier Project Architecture</h2>
-        <p class="section-subtitle">
-          Every project in this portfolio adheres strictly to an empirical four-stage progression from territorial challenge to actionable governance:
-        </p>
-      </div>
-
-      <div class="timeline-grid">
-        <div class="timeline-step">
-          <div class="step-num">01</div>
-          <div class="step-content">
-            <h4>Spatial Problem</h4>
-            <p>Identifying real-world vulnerabilities: unmonitored peri-urban sprawl, fertilizer runoff, permafrost thaw, dam spillage flooding, or transit healthcare deserts.</p>
-          </div>
+    <!-- Modal 4: Flood U-Net & Grad-CAM -->
+    <div id="flood-unet-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('flood-unet-modal')">&times;</span>
+            <h2>Flood Prediction Using U-Net Model: Akosombo Dam Spillage 2023</h2>
+            <p><strong>Tools &amp; Technologies:</strong> TensorFlow/Keras, U-Net, Grad-CAM, Drone Imagery</p>
+            
+            <h3>Project Overview</h3>
+            <p>The October 2023 Akosombo Dam spillage displaced riverine communities across the Lower Volta Basin in Ghana. This project trains an encoder-decoder U-Net to rapidly segment floodwaters from drone and satellite imagery.</p>
+            
+            <h3>Explainability with Grad-CAM</h3>
+            <p>To avoid black-box errors (such as confusing asphalt road shadows with floodwater), we implemented Gradient-weighted Class Activation Mapping (Grad-CAM). Grad-CAM heatmaps verified that the model made predictions based on specular water reflections and inundated residential parcels.</p>
+            <ul>
+                <li><strong>87.4% Test Accuracy</strong> and <strong>72.1% IoU</strong> on aerial drone imagery.</li>
+                <li>Directly supported emergency disaster mapping during the Lower Volta relief operations.</li>
+            </ul>
+            
+            <p><strong>GitHub Source:</strong> <a href="https://github.com/Emmanuel-Yerbo/GEOAI/tree/main/04_XAI_Flood_GradCAM" target="_blank" rel="noopener">Inspect 04_XAI_Flood_GradCAM Code on GitHub</a></p>
         </div>
-
-        <div class="timeline-step">
-          <div class="step-num">02</div>
-          <div class="step-content">
-            <h4>Methodological Pipeline</h4>
-            <p>Ingesting multi-sensor Earth observation feeds (Sentinel-2, Landsat, GEDI LiDAR, UAV drone, OSM) into custom PyTorch deep learning models, GEE scripts, or graph networks.</p>
-          </div>
-        </div>
-
-        <div class="timeline-step">
-          <div class="step-num">03</div>
-          <div class="step-content">
-            <h4>Spatial Block Validation</h4>
-            <p>Enforcing Spatial Block CV, Grad-CAM XAI interpretability, confusion matrices, and competitive international benchmarking with zero spatial data leakage.</p>
-          </div>
-        </div>
-
-        <div class="timeline-step">
-          <div class="step-num">04</div>
-          <div class="step-content">
-            <h4>Policy & Planning Impact</h4>
-            <p>Offloading predictions into statutory zoning, variable-rate nitrogen prescriptions, emergency flood evacuation routes, and LUSPA infrastructure master plans.</p>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
 
-  <!-- FLAGSHIP PROJECTS SECTION -->
-  <section class="section projects-section" id="projects">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-tag">Applied Research Codebase (20 Projects)</div>
-        <h2 class="section-title">20 Flagship GeoAI & Earth Observation Projects</h2>
-        <p class="section-subtitle">
-          Click on any project to explore the complete 4-tier breakdown, performance metrics, confusion matrices, and verified GitHub source code.
-        </p>
-      </div>
-
-      <!-- FILTER TABS -->
-      <div class="filter-tabs">
-        <button class="filter-btn active" data-filter="all">All Projects (20)</button>
-        <button class="filter-btn" data-filter="agri">Precision Agriculture & Biomass (2)</button>
-        <button class="filter-btn" data-filter="disaster">Cryosphere, Floods & Hazards (6)</button>
-        <button class="filter-btn" data-filter="vision">Vision Transformers & Foundation Models (5)</button>
-        <button class="filter-btn" data-filter="urban">Urban Intelligence, Mobility & DGGS (7)</button>
-      </div>
-
-      <!-- PROJECTS GRID -->
-      <div class="projects-grid" id="projectsGrid">
-        <!-- Rendered by JavaScript dynamically with complete 4-tier details -->
-      </div>
+    <!-- Modal 5: SAMGeo -->
+    <div id="samgeo-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('samgeo-modal')">&times;</span>
+            <h2>Image Segmentation with SAMGeo (Zero-Shot Learning)</h2>
+            <p><strong>Tools &amp; Technologies:</strong> Meta SAM, SAMGeo, Vision Transformers (ViT), Python</p>
+            
+            <h3>Project Overview</h3>
+            <p>SAMGeo adapts Meta AI's Segment Anything Model (SAM) for geospatial applications. This project applied SAMGeo to high-resolution satellite imagery covering the University of Cape Coast campus to extract key infrastructure without training labels.</p>
+            
+            <h3>Results &amp; Takeaways</h3>
+            <p>The zero-shot pipeline successfully delineated building boundaries and campus landmarks (Sam Jonah Library, G-Block, Lecture Theater). This demonstrates how foundation models save weeks of manual digitizing for municipal assemblies.</p>
+            
+            <p><strong>GitHub Source:</strong> <a href="https://github.com/Emmanuel-Yerbo/GEOAI/tree/main/06_SAMGeo_Infrastructure" target="_blank" rel="noopener">Inspect 06_SAMGeo_Infrastructure Code on GitHub</a></p>
+        </div>
     </div>
-  </section>
 
-  <!-- MASTERCLASSES & GEOSPATIAL ENGINEERING -->
-  <section class="section masterclass-section" id="masterclasses">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-tag">Applied Geospatial Engineering & Curriculum</div>
-        <h2 class="section-title">Applied GIS, PostGIS & Spatial Analytics Masterclasses</h2>
-        <p class="section-subtitle">
-          Authored and maintained as part of the <a href="https://github.com/Emmanuel-Yerbo/GIS" target="_blank" rel="noopener" style="color: var(--secondary);">Emmanuel-Yerbo/GIS</a> repository, providing industry-grade workflows for urban planners and spatial data scientists.
-        </p>
-      </div>
-
-      <div class="grid grid-3">
-        <div class="masterclass-card">
-          <span class="masterclass-badge"><i class="fab fa-python"></i> 13-Chapter Curriculum</span>
-          <h3>Python for Urban Spatial Analytics</h3>
-          <p>
-            An end-to-end masterclass navigating GeoPandas, OSMnx topological network graphs, pedestrian walk isochrones, Uber H3 hexagonal binning, GPU-accelerated 3D PyDeck building extrusions, and urban machine learning.
-          </p>
-          <div class="chapter-pills">
-            <span class="chapter-pill">Ch 01-03: GeoPandas & Cadastres</span>
-            <span class="chapter-pill">Ch 04-07: OSMnx & Isochrones</span>
-            <span class="chapter-pill">Ch 08-09: H3 & PyDeck 3D</span>
-            <span class="chapter-pill">Ch 10-13: Momepy & Urban LST</span>
-          </div>
-          <a href="https://github.com/Emmanuel-Yerbo/GIS/tree/main/Python%20for%20Urban%20Analysis" target="_blank" rel="noopener" class="btn btn-secondary" style="margin-top: auto;">
-            <i class="fab fa-github"></i> Inspect Python Masterclass
-          </a>
+    <!-- Modal 6: GEE Flood Risk Mapping -->
+    <div id="gee-flood-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('gee-flood-modal')">&times;</span>
+            <h2>Flood Risk Mapping in the Volta Region, Ghana</h2>
+            <p><strong>Tools &amp; Technologies:</strong> Google Earth Engine, MERIT HAND, SRTM 30m, ESA WorldCover, JRC Water</p>
+            
+            <h3>Project Overview</h3>
+            <p>Flooding is a recurrent hazard in the Volta Basin. This project built an automated multi-criteria weighted overlay model in Google Earth Engine to evaluate territorial flood susceptibility.</p>
+            
+            <h3>Methodology &amp; Weights</h3>
+            <ul>
+                <li><strong>Height Above Nearest Drainage (HAND):</strong> 30% weight (hydraulic ponding potential)</li>
+                <li><strong>Elevation &amp; Slope Gradients:</strong> 25% weight (SRTM 30m DEM)</li>
+                <li><strong>Historical Flood Recurrence:</strong> 20% weight (JRC 24-year surface water monthly series)</li>
+                <li><strong>Land Cover / Permeability:</strong> 15% weight (ESA WorldCover 10m)</li>
+                <li><strong>Proximity to Major Channels:</strong> 10% weight</li>
+            </ul>
+            <p><strong>Outcome:</strong> Identified 37.5% of the lower basin as high-to-severe flood risk zones, closely matching historical ground records from NADMO.</p>
+            
+            <p><strong>GitHub Source:</strong> <a href="https://github.com/Emmanuel-Yerbo/GEOAI/tree/main/07_GEE_Flood_Susceptibility" target="_blank" rel="noopener">Inspect 07_GEE_Flood_Susceptibility Code on GitHub</a></p>
         </div>
-
-        <div class="masterclass-card">
-          <span class="masterclass-badge"><i class="fas fa-database"></i> 10 SQL Chapters</span>
-          <h3>Enterprise PostGIS Database Masterclass</h3>
-          <p>
-            Production SQL curriculum covering spatial indexing (R*Tree), geodesy, Voronoi riparian buffering, pgRouting shortest-path graph calculations, 15-minute city isochrones, and Huff gravity retail trade modeling.
-          </p>
-          <div class="chapter-pills">
-            <span class="chapter-pill">Ch 01-03: Geodesy & ETL</span>
-            <span class="chapter-pill">Ch 04-06: Morphometrics & pgRouting</span>
-            <span class="chapter-pill">Ch 07-08: H3 & 15-Min Isochrones</span>
-            <span class="chapter-pill">Ch 09-10: Huff Gravity & Analytics</span>
-          </div>
-          <a href="https://github.com/Emmanuel-Yerbo/GIS/tree/main/postgis_masterclass" target="_blank" rel="noopener" class="btn btn-secondary" style="margin-top: auto;">
-            <i class="fab fa-github"></i> Inspect PostGIS Suite
-          </a>
-        </div>
-
-        <div class="masterclass-card">
-          <span class="masterclass-badge"><i class="fab fa-r-project"></i> Nightlights & EO</span>
-          <h3>Socioeconomic Nightlights Cartography</h3>
-          <p>
-            Macro-scale spatial pipeline in R processing NASA VIIRS Day/Night Band annual composites with <code>terra</code>, <code>sf</code>, and <code>ggplot2</code>, mapping electrification corridors, grid stability, and regional economic inequality across Ghana.
-          </p>
-          <div class="chapter-pills">
-            <span class="chapter-pill">NASA VIIRS DNB</span>
-            <span class="chapter-pill">R terra & sf</span>
-            <span class="chapter-pill">Log Radiance Mapping</span>
-            <span class="chapter-pill">National Electrification</span>
-          </div>
-          <a href="https://github.com/Emmanuel-Yerbo/GIS" target="_blank" rel="noopener" class="btn btn-secondary" style="margin-top: auto;">
-            <i class="fab fa-github"></i> Inspect R Spatial Code
-          </a>
-        </div>
-      </div>
     </div>
-  </section>
 
-  <!-- SCHOLARLY WORKS & PUBLICATIONS -->
-  <section class="section pub-section" id="publications">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-tag">Scholarly Outputs & Peer-Reviewed Contributions</div>
-        <h2 class="section-title">Publications & Academic Presentations</h2>
-        <p class="section-subtitle">
-          Connecting research with international peer-reviewed dissemination and open-science verification.
-        </p>
-      </div>
-
-      <div style="max-width: 900px; margin: 0 auto;">
-        <div class="pub-card">
-          <div class="pub-meta">
-            <span class="pub-year">2026</span>
-            <span class="pub-type">Conference Presentation & Original Draft</span>
-          </div>
-          <h3 class="pub-title">GeoAI-Driven Precision Health Classification and Variable-Rate Nitrogen Prescribing in Ghana Using a 1D-CNN and Spatial Block Cross-Validation</h3>
-          <div class="pub-authors"><strong>Emmanuel Yerbo</strong></div>
-          <div class="pub-venue">GeoAI for Sustainable Development Conference (GeoAI4SD 2026)</div>
+    <!-- Modal 7: LST Urban Heat Island -->
+    <div id="lst-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('lst-modal')">&times;</span>
+            <h2>24-Year Urban Heat Island Dynamics in Greater Accra</h2>
+            <p><strong>Academic Level:</strong> Undergraduate Honors Thesis, Department of Geography &amp; Regional Planning, UCC</p>
+            <p><strong>Tools &amp; Technologies:</strong> Landsat Thermal Infrared (2000–2024), PySAL, Getis-Ord Gi*, Global Moran's I</p>
+            
+            <h3>Project Overview</h3>
+            <p>Rapid urban sprawl across Greater Accra has replaced natural vegetation and agricultural lands with asphalt and concrete surfaces. This research retrieved land surface temperature across 24 years of Landsat Collection 2 imagery to assess thermal distress.</p>
+            
+            <h3>Key Findings</h3>
+            <ul>
+                <li>Proved statistically significant (p &lt; 0.001) spatial autocorrelation of thermal extremes, with Moran's I increasing from 0.482 in 2000 to 0.647 in 2024.</li>
+                <li>Documented the outward migration of intense thermal hotspots into expanding northern peri-urban corridors (Adenta, Ga East).</li>
+                <li>Provides empirical backing for urban greening policies and climate-resilient spatial structure plans.</li>
+            </ul>
+            
+            <p><strong>GitHub Source:</strong> <a href="https://github.com/Emmanuel-Yerbo/GEOAI/tree/main/08_PySAL_LST_Hotspots" target="_blank" rel="noopener">Inspect 08_PySAL_LST_Hotspots Code on GitHub</a></p>
         </div>
-
-        <div class="pub-card">
-          <div class="pub-meta">
-            <span class="pub-year">2026</span>
-            <span class="pub-type">Conference Presentation</span>
-          </div>
-          <h3 class="pub-title">Vision Transformers and Tree SHAP for Explainable Land Use / Land Cover Phenology in Transition Agro-Pastoral Savannahs</h3>
-          <div class="pub-authors"><strong>Emmanuel Yerbo</strong></div>
-          <div class="pub-venue">Ghana Geographical Association (GGA) Annual Conference</div>
-        </div>
-
-        <div class="pub-card">
-          <div class="pub-meta">
-            <span class="pub-year">2024</span>
-            <span class="pub-type">Undergraduate Honors Thesis</span>
-          </div>
-          <h3 class="pub-title">24-Year Urban Heat Island Dynamics and Microclimatic Spatial Autocorrelation Trajectories in Greater Accra (2000–2024)</h3>
-          <div class="pub-authors"><strong>Emmanuel Yerbo</strong> (Supervised at Department of Geography and Regional Planning, UCC)</div>
-          <div class="pub-venue">University of Cape Coast Institutional Repository | First Class Honours (GPA 3.82/4.00)</div>
-        </div>
-
-        <div style="text-align: center; margin-top: 2rem;">
-          <a href="https://orcid.org/0009-0008-8968-6999" target="_blank" rel="noopener" class="orcid-pill">
-            <i class="fab fa-orcid"></i> Verified ORCID: 0009-0008-8968-6999
-          </a>
-        </div>
-      </div>
     </div>
-  </section>
 
-  <!-- MODAL FOR DETAILED 4-TIER BREAKDOWN -->
-  <div class="modal-overlay" id="projectModal">
-    <div class="modal-card">
-      <button class="modal-close" id="modalClose">&times;</button>
-      <div class="modal-body" id="modalBody">
-        <!-- Injected dynamically -->
-      </div>
-    </div>
-  </div>
-
-  <!-- EXPERIENCE & LEADERSHIP -->
-  <section class="section experience-section" id="experience">
-    <div class="container">
-      <div class="section-header">
-        <div class="section-tag">Professional Track Record & Honors</div>
-        <h2 class="section-title">Experience, Leadership & Honors</h2>
-      </div>
-
-      <div class="grid grid-2">
-        <div class="exp-card">
-          <div class="exp-date">11/2024 – 11/2025</div>
-          <h3 class="exp-title">Teaching and Research Assistant</h3>
-          <div class="exp-inst">University of Cape Coast — Department of Geography and Regional Planning</div>
-          <ul class="exp-bullets">
-            <li>Instructed weekly GIS & Remote Sensing practical laboratory sessions for over 100 undergraduate students.</li>
-            <li>Authored the departmental 13-module <em>Urban Spatial Analytics Handbook</em> covering PostGIS, pgRouting, and GeoPython.</li>
-            <li>Supervised student spatial modeling exercises, confusion matrix accuracy audits, and QGIS/ArcGIS laboratory assessments.</li>
-          </ul>
+    <!-- Modal 8: 15-Minute City Network Isochrones -->
+    <div id="walk-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('walk-modal')">&times;</span>
+            <h2>15-Minute City Network Isochrones &amp; Healthcare Accessibility</h2>
+            <p><strong>Distinction:</strong> 2nd Place in the Esri Map4Impact Hackathon 2.0</p>
+            <p><strong>Tools &amp; Technologies:</strong> OSMnx, NetworkX Dijkstra, Uber H3 Hexagons, PyDeck 3D WebGL</p>
+            
+            <h3>Project Overview</h3>
+            <p>Evaluated pedestrian access to public health clinics across the Greater Accra Metropolitan Area using topological walkable road networks from OpenStreetMap.</p>
+            
+            <h3>Results &amp; Findings</h3>
+            <ul>
+                <li>Constructed 5, 10, and 15-minute walking catchment isochrones using network distance rather than misleading Euclidean straight-line buffers.</li>
+                <li>While 93.8% of residents in the urban core can reach a primary clinic within 15 minutes, <strong>41.8% of peri-urban residents remain in healthcare transit deserts</strong>.</li>
+                <li>Collaborated with spatial planning guidelines to recommend optimized health post locations along transit corridors.</li>
+            </ul>
+            
+            <p><strong>GitHub Source:</strong> <a href="https://github.com/Emmanuel-Yerbo/GEOAI/tree/main/09_Network_Accessibility_15MinCity" target="_blank" rel="noopener">Inspect 09_Network_Accessibility_15MinCity Code on GitHub</a></p>
         </div>
-
-        <div class="exp-card">
-          <div class="exp-date">2021, 2022, 2023</div>
-          <h3 class="exp-title">Dean's Award for Academic Excellence (3-Time Recipient)</h3>
-          <div class="exp-inst">Faculty of Social Sciences, University of Cape Coast, Ghana</div>
-          <ul class="exp-bullets">
-            <li>Awarded for maintaining top academic standing across all four academic years in Geography and Regional Planning.</li>
-            <li>Graduated with First Class Honours (Cumulative GPA: 3.82 / 4.00), placing in the top 1% of the graduating cohort.</li>
-            <li>Recognized for outstanding quantitative coursework across Cartography, Spatial Statistics, and Land Use Planning.</li>
-          </ul>
-        </div>
-
-        <div class="exp-card">
-          <div class="exp-date">07/2023 – 10/2023</div>
-          <h3 class="exp-title">Physical Planning Intern</h3>
-          <div class="exp-inst">Physical Planning Department, Prestea Huni-Valley Municipal Assembly, Ghana</div>
-          <ul class="exp-bullets">
-            <li>Formulated cartographic spatial layouts and zoning maps for the District Medium-Term Development Plan (MTDP).</li>
-            <li>Participated in cadastral field surveying and GPS boundary demarcation between statutory town schemes and customary lands.</li>
-            <li>Evaluated land-use zoning permits across expanding peri-urban mining and agricultural corridors.</li>
-          </ul>
-        </div>
-
-        <div class="exp-card">
-          <div class="exp-date">2024 & 2026</div>
-          <h3 class="exp-title">International Challenge Distinctions</h3>
-          <div class="exp-inst">Cyber2A Arctic GeoAI Challenge & Esri Map4Impact Hackathon</div>
-          <ul class="exp-bullets">
-            <li><strong>Top 5 Globally (16.45 AP):</strong> 2026 Cyber2A Arctic GeoAI Challenge for multi-arm semantic segmentation of retrogressive thaw slumps with 13-channel geomorphometric tensors.</li>
-            <li><strong>2nd Place:</strong> Esri Map4Impact Hackathon 2.0 (2024) for urban healthcare 15-minute accessibility isochrone modeling in Greater Accra.</li>
-            <li>YouthMappers Organizer mobilizing participatory OpenStreetMap mapping for flood-resilient coastal communities.</li>
-          </ul>
-        </div>
-      </div>
     </div>
-  </section>
 
-  <!-- CONTACT & FOOTER -->
-  <footer class="footer-section" id="contact">
-    <div class="container footer-container">
-      <div class="footer-left">
-        <h2>Emmanuel Yerbo</h2>
-        <p>BSc Geography & Regional Planning (First Class Honours, CGPA 3.82 / 4.00)</p>
-        <p class="footer-sub">
-          Cape Coast / Accra, Ghana | 
-          <a href="mailto:emmanuelyerbo@gmail.com">emmanuelyerbo@gmail.com</a> | 
-          <a href="mailto:emmanuel.yerbo@stu.ucc.edu.gh">emmanuel.yerbo@stu.ucc.edu.gh</a> | 
-          +233 55 377 6346
-        </p>
-      </div>
-      
-      <div class="footer-links">
-        <a href="https://github.com/Emmanuel-Yerbo/GEOAI" target="_blank" rel="noopener"><i class="fab fa-github"></i> GEOAI</a>
-        <a href="https://github.com/Emmanuel-Yerbo/GIS" target="_blank" rel="noopener"><i class="fas fa-map"></i> GIS</a>
-        <a href="https://www.linkedin.com/in/emmanuelyerbo" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i> LinkedIn</a>
-        <a href="https://orcid.org/0009-0008-8968-6999" target="_blank" rel="noopener"><i class="fab fa-orcid"></i> ORCID</a>
-        <a href="mailto:emmanuelyerbo@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-      </div>
+    <!-- Modal 9: Traffic Accident Geocoding (GeoNLP) -->
+    <div id="geonlp-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('geonlp-modal')">&times;</span>
+            <h2>Road Traffic Accident Geocoding &amp; Spatial Clustering (GeoNLP)</h2>
+            <p><strong>Tools &amp; Technologies:</strong> Python, spaCy NER, Custom Ghanaian Gazetteer, Levenshtein, DBSCAN</p>
+            
+            <h3>Project Overview</h3>
+            <p>Road accident statistics in developing nations are frequently delayed and lack accurate geographic coordinates. This project built an end-to-end NLP and spatial data science pipeline to scrape online Ghanaian news portals, extract crash locations, and map accident blackspots.</p>
+            
+            <h3>Methodology &amp; Results</h3>
+            <ul>
+                <li>Extracted location entities using a custom Ghanaian gazetteer with 94.2% entity recall.</li>
+                <li>Resolved ambiguous and misspelled town names using Levenshtein distance fuzzy matching (91.8% match rate).</li>
+                <li>Applied DBSCAN spatial density clustering to identify 18 high-risk highway crash corridors.</li>
+            </ul>
+            
+            <p><strong>GitHub Source:</strong> <a href="https://github.com/Emmanuel-Yerbo/GEOAI/tree/main/12_GeoNLP_Spatial_Accident_Geocoding" target="_blank" rel="noopener">Inspect 12_GeoNLP_Spatial_Accident_Geocoding Code on GitHub</a></p>
+        </div>
     </div>
-    
-    <div class="footer-bottom">
-      <p>&copy; 2026 Emmanuel Yerbo. Geospatial Data Scientist, Regional Planner & GeoAI Researcher.</p>
-    </div>
-  </footer>
 
-  <script src="app.js"></script>
+    <!-- Modal 10: Pretrained Models -->
+    <div id="pretrained-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('pretrained-modal')">&times;</span>
+            <h2>Building Footprint Extraction using Pretrained Models</h2>
+            <p><strong>Tools &amp; Technologies:</strong> ArcGIS Pro, Deep Learning, Feature Extraction, Living Atlas</p>
+            
+            <h3>Project Overview</h3>
+            <p>Compared the performance of ArcGIS pretrained building extraction models (USA vs. Africa) on satellite imagery covering Ghanaian settlements. Found that models trained on Western suburban layouts struggle with dense informal roofs, underscoring the critical importance of fine-tuning with local training data.</p>
+        </div>
+    </div>
+
+    <!-- Modal 11: Watershed Analysis -->
+    <div id="watershed-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('watershed-modal')">&times;</span>
+            <h2>Watershed Per Outlet Analysis: Sawla-Tuna-Kalba District, Ghana</h2>
+            <p><strong>Tools &amp; Technologies:</strong> SRTM DEM, Hydrological Modeling, Flow Accumulation, ArcGIS</p>
+            
+            <h3>Project Overview</h3>
+            <p>Delineated contributing drainage catchments for multiple stream outlets across the Sawla-Tuna-Kalba District. Calculated total basin areas ranging from 1,405 km² to 1,432 km² to support district-level water resource management and flood preparedness.</p>
+        </div>
+    </div>
+
+    <!-- Modal 12: NDVI Sentinel-2 -->
+    <div id="ndvi-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('ndvi-modal')">&times;</span>
+            <h2>NDVI Vegetation Monitoring with Sentinel-2 in Google Earth Engine</h2>
+            <p><strong>Tools &amp; Technologies:</strong> Sentinel-2 MSI, Google Earth Engine JavaScript API, Cloud Masking</p>
+            
+            <h3>Project Overview</h3>
+            <p>Automated cloud-masked Sentinel-2 composite generation and Normalized Difference Vegetation Index (NDVI) calculations to track seasonal agricultural vegetation vigor and detect drought stress across farming communities in Ghana.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#skills">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#masterclasses">Masterclasses</a></li>
+                        <li><a href="#publications">Publications</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Professional Links</h4>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/emmanuelyerbo" target="_blank" rel="noopener">LinkedIn Profile</a></li>
+                        <li><a href="https://github.com/Emmanuel-Yerbo" target="_blank" rel="noopener">GitHub (@Emmanuel-Yerbo)</a></li>
+                        <li><a href="https://github.com/Emmanuel-Yerbo/GEOAI" target="_blank" rel="noopener">GEOAI Research Suite</a></li>
+                        <li><a href="https://github.com/Emmanuel-Yerbo/GIS" target="_blank" rel="noopener">GIS Masterclasses</a></li>
+                        <li><a href="https://orcid.org/0009-0008-8968-6999" target="_blank" rel="noopener">ORCID Profile</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="tel:+233553776346">+233 553 776 346</a></li>
+                        <li><a href="mailto:emmanuelyerbo@gmail.com">emmanuelyerbo@gmail.com</a></li>
+                        <li><a href="mailto:emmanuel.yerbo@stu.ucc.edu.gh">emmanuel.yerbo@stu.ucc.edu.gh</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2026</span> Emmanuel Yerbo. All rights reserved.</p>
+                <p>GIS Specialist | Geospatial Data Analyst | Environmental Researcher</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
