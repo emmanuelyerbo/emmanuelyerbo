@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://emmanuelyerbo.github.io/emmanuelyerbo/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://emmanuelyerbo.github.io/emmanuelyerbo/images/background_image.jpg</image:loc>
+      <image:title>Emmanuel Yerbo - GIS Specialist and Geospatial Data Analyst</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://emmanuelyerbo.github.io/emmanuelyerbo/images/veghealth_architecture.png</image:loc>
+      <image:title>VegHealthCNN Precision Agriculture Architecture</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://emmanuelyerbo.github.io/emmanuelyerbo/images/frostwatch_audit.jpg</image:loc>
+      <image:title>FrostWatch Arctic Thaw Slump Semantic Segmentation</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://emmanuelyerbo.github.io/emmanuelyerbo/images/building_eval.png</image:loc>
+      <image:title>Nationwide Building Footprint Extraction with SegFormer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://emmanuelyerbo.github.io/emmanuelyerbo/images/gradcam_flood.png</image:loc>
+      <image:title>Akosombo Flood Prediction and Grad-CAM Explainability</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://emmanuelyerbo.github.io/emmanuelyerbo/images/Road%20Density.jpg</image:loc>
+      <image:title>24-Year Urban Heat Island Dynamics and PySAL Hotspots</image:title>
+    </image:image>
+  </url>
+</urlset>

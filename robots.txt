@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://emmanuelyerbo.github.io/emmanuelyerbo/sitemap.xml
