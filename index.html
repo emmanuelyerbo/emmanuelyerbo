@@ -312,177 +312,112 @@
     </section>
 
     <!-- Projects Section -->
+        <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Projects &amp; Research</h2>
             <p class="section-subtitle">Click on any project to view the detailed case study, methodology, and results</p>
             
             <div class="projects-grid">
-                <!-- Project 1: VegHealthCNN -->
+                <!-- Project 1: Flood Risk Mapping -->
                 <div class="project-card">
                     <div class="project-image">
-                        <a href="#veghealth-modal" onclick="openModal('veghealth-modal')">
-                            <picture><source srcset="images/veghealth_architecture.webp" type="image/webp"><img src="images/veghealth_architecture.png" alt="VegHealthCNN 1D Convolutional Neural Network Architecture for Agriculture" width="1024" height="1024" loading="lazy" decoding="async"></picture>
+                        <a href="#project1-modal" onclick="openModal('project1-modal')">
+                            <picture>
+                                <source srcset="images/project1_image.webp" type="image/webp">
+                                <img src="images/project1_image.jpg" alt="Flood Risk Mapping in the Volta Region, Ghana" width="800" height="800" loading="lazy" decoding="async">
+                            </picture>
                         </a>
                     </div>
                     <div class="project-content">
-                        <h3>VegHealthCNN: 1D-CNN for Precision Agriculture</h3>
-                        <p class="project-tech">PyTorch | Sentinel-2 | Spatial Block CV | Precision Farming</p>
-                        <p class="project-desc">A 57k-parameter 1D-CNN trained on Sentinel-2 multi-temporal reflectance achieving 98.7% test accuracy across 301 spatially isolated field samples, projecting a 19.5% reduction in synthetic nitrogen demand.</p>
+                        <h3>Flood Risk Mapping in the Volta Region, Ghana</h3>
+                        <p class="project-tech">Google Earth Engine | Remote Sensing | Multi-criteria Analysis</p>
+                        <p class="project-desc">Developed a flood susceptibility model using Google Earth Engine combining land cover, elevation, slope, and historical flood frequency data to produce comprehensive flood risk maps for the Volta region.</p>
                     </div>
                 </div>
 
-                <!-- Project 2: FrostWatch Arctic -->
+                <!-- Project 2: NDVI Calculation -->
                 <div class="project-card">
                     <div class="project-image">
-                        <a href="#frostwatch-modal" onclick="openModal('frostwatch-modal')">
-                            <picture><source srcset="images/frostwatch_audit.webp" type="image/webp"><img src="images/frostwatch_audit.jpg" alt="FrostWatch Arctic Permafrost Thaw Slump Semantic Segmentation" width="1024" height="988" loading="lazy" decoding="async"></picture>
+                        <a href="#project2-modal" onclick="openModal('project2-modal')">
+                            <picture>
+                                <source srcset="images/project2_image.webp" type="image/webp">
+                                <img src="images/project2_image.png" alt="NDVI Calculation Using Sentinel-2 in Google Earth Engine" width="1200" height="1200" loading="lazy" decoding="async">
+                            </picture>
                         </a>
                     </div>
                     <div class="project-content">
-                        <h3>FrostWatch Arctic: Permafrost Thaw Slump Segmentation</h3>
-                        <p class="project-tech">UNet++ | DeepLabV3+ | 13-Channel Tensor | Top 5 Globally</p>
-                        <p class="project-desc">Three-arm semantic segmentation ensemble fusing multi-spectral bands with terrain curvature and slope, placing Top 5 globally (16.45 AP) in the 2026 Cyber2A Arctic Challenge.</p>
+                        <h3>NDVI Calculation Using Sentinel-2 Imagery in Google Earth Engine</h3>
+                        <p class="project-tech">Sentinel-2 | Vegetation Index | GEE Scripts</p>
+                        <p class="project-desc">Calculated Normalized Difference Vegetation Index (NDVI) from Sentinel-2 satellite imagery to monitor vegetation health, crop conditions, and ecosystem health using cloud-masked composites.</p>
                     </div>
                 </div>
 
-                <!-- Project 3: Building Extraction -->
+                <!-- Project 3: Watershed Analysis -->
                 <div class="project-card">
                     <div class="project-image">
-                        <a href="#building-modal" onclick="openModal('building-modal')">
-                            <picture><source srcset="images/building_eval.webp" type="image/webp"><img src="images/building_eval.png" alt="Nationwide Building Footprint Extraction with SegFormer" width="501" height="1024" loading="lazy" decoding="async"></picture>
+                        <a href="#project3-modal" onclick="openModal('project3-modal')">
+                            <picture>
+                                <source srcset="images/project3_image.webp" type="image/webp">
+                                <img src="images/project3_image.png" alt="Watershed Per Outlet Analysis: Sawla-Tuna-Kalba District, Ghana" width="1400" height="1299" loading="lazy" decoding="async">
+                            </picture>
                         </a>
                     </div>
                     <div class="project-content">
-                        <h3>Nationwide Building Footprint Extraction with SegFormer</h3>
-                        <p class="project-tech">SegFormer-B3 | TorchGeo | 30cm Aerial | Boundary Snapping</p>
-                        <p class="project-desc">Fine-tuned SegFormer-B3 resolving contiguous zinc roof alleys across dense informal settlements in Accra and Kumasi, achieving 57.9% IoU where global catalogs merge dwellings.</p>
+                        <h3>Watershed Per Outlet Analysis: Sawla-Tuna-Kalba District, Ghana</h3>
+                        <p class="project-tech">DEM Analysis | Hydrological Modeling | Flow Accumulation</p>
+                        <p class="project-desc">Delineated watershed areas for multiple outlets using digital elevation models and hydrological analysis, establishing total drainage areas (1,405 km² to 1,432 km²) for water resource management.</p>
                     </div>
                 </div>
 
-                <!-- Project 4: Flood Prediction with U-Net & Grad-CAM -->
+                <!-- Project 4: SAMGeo -->
                 <div class="project-card">
                     <div class="project-image">
-                        <a href="#flood-unet-modal" onclick="openModal('flood-unet-modal')">
-                            <picture><source srcset="images/gradcam_flood.webp" type="image/webp"><img src="images/gradcam_flood.png" alt="Akosombo Flood Inundation Prediction and Grad-CAM Explainability" width="1166" height="1190" loading="lazy" decoding="async"></picture>
+                        <a href="#project4-modal" onclick="openModal('project4-modal')">
+                            <picture>
+                                <source srcset="images/project4_image.webp" type="image/webp">
+                                <img src="images/project4_image.png" alt="Image Segmentation with SAMGeo (GeoAI)" width="794" height="498" loading="lazy" decoding="async">
+                            </picture>
                         </a>
                     </div>
                     <div class="project-content">
-                        <h3>Flood Prediction &amp; Explainability with Grad-CAM</h3>
-                        <p class="project-tech">U-Net | PyTorch | Grad-CAM | Drone UAV Imagery</p>
-                        <p class="project-desc">Trained a U-Net model on aerial drone imagery from the 2023 Akosombo Dam spillage (87% accuracy, 72% IoU), using Grad-CAM heatmaps to verify neural focus on floodwaters rather than asphalt shadows.</p>
+                        <h3>Image Segmentation with SAMGeo (GeoAI)</h3>
+                        <p class="project-tech">SAMGeo | Vision Transformers | Zero-shot Learning</p>
+                        <p class="project-desc">Applied SAMGeo (Segment Anything Model for Geospatial data) to automatically segment and identify key landmarks (Sam Jonah Library, G-Block, LT) from satellite imagery without additional training.</p>
                     </div>
                 </div>
 
-                <!-- Project 5: SAMGeo -->
+                <!-- Project 5: Flood Prediction U-Net & Grad-CAM -->
                 <div class="project-card">
                     <div class="project-image">
-                        <a href="#samgeo-modal" onclick="openModal('samgeo-modal')">
-                            <picture><source srcset="images/project4_image.webp" type="image/webp"><img src="images/project4_image.png" alt="Zero-Shot Campus Landmark Segmentation with SAMGeo" width="794" height="498" loading="lazy" decoding="async"></picture>
+                        <a href="#project5-modal" onclick="openModal('project5-modal')">
+                            <picture>
+                                <source srcset="images/project5_image.webp" type="image/webp">
+                                <img src="images/project5_image.png" alt="Flood Prediction Using U-Net Model: Akosombo Dam Spillage 2023" width="1166" height="1190" loading="lazy" decoding="async">
+                            </picture>
                         </a>
                     </div>
                     <div class="project-content">
-                        <h3>Zero-Shot Campus Landmark Segmentation with SAMGeo</h3>
-                        <p class="project-tech">SAMGeo | Meta SAM | Vision Transformers | Zero-shot</p>
-                        <p class="project-desc">Operationalized Meta AI's Segment Anything Model (SAM) for remote sensing, successfully segmenting key campus landmarks (Sam Jonah Library, Lecture Theater) with zero task retraining.</p>
+                        <h3>Flood Prediction Using U-Net Model: Akosombo Dam Spillage 2023</h3>
+                        <p class="project-tech">Deep Learning | U-Net | Grad-CAM | AI Explainability</p>
+                        <p class="project-desc">Trained a U-Net deep learning model for automatic flood segmentation achieving 87% accuracy and 72% IoU. Successfully applied to 2023 Akosombo Dam spillage images with explainable AI (Grad-CAM) heatmaps.</p>
                     </div>
                 </div>
 
-                <!-- Project 6: GEE Flood Risk Mapping -->
+                <!-- Project 6: Building Footprint Pretrained Models -->
                 <div class="project-card">
                     <div class="project-image">
-                        <a href="#gee-flood-modal" onclick="openModal('gee-flood-modal')">
-                            <picture><source srcset="images/project1_image.webp" type="image/webp"><img src="images/project1_image.jpg" alt="Multi-Criteria Flood Susceptibility Modeling in Google Earth Engine" width="800" height="800" loading="lazy" decoding="async"></picture>
+                        <a href="#project6-modal" onclick="openModal('project6-modal')">
+                            <picture>
+                                <source srcset="images/pre_trained.webp" type="image/webp">
+                                <img src="images/pre_trained.jpg" alt="Building Footprint Extraction using Pretrained Models" width="800" height="800" loading="lazy" decoding="async">
+                            </picture>
                         </a>
                     </div>
                     <div class="project-content">
-                        <h3>Flood Susceptibility Modeling in Google Earth Engine</h3>
-                        <p class="project-tech">Google Earth Engine | MERIT HAND | SRTM 30m | AHP Overlay</p>
-                        <p class="project-desc">Cloud-native multi-criteria weighted overlay fusing elevation, HAND, slope, land cover, and 24-year JRC water recurrence, identifying 37.5% of the Lower Volta Basin as high-to-severe flood risk.</p>
-                    </div>
-                </div>
-
-                <!-- Project 7: Urban Heat Island Dynamics -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <a href="#lst-modal" onclick="openModal('lst-modal')">
-                            <picture><source srcset="images/Road%20Density.webp" type="image/webp"><img src="images/Road Density.jpg" alt="24-Year Urban Heat Island Dynamics and PySAL Spatial Autocorrelation" width="1400" height="1081" loading="lazy" decoding="async"></picture>
-                        </a>
-                    </div>
-                    <div class="project-content">
-                        <h3>24-Year Urban Heat Island Dynamics &amp; PySAL Hotspots</h3>
-                        <p class="project-tech">Landsat TIR | PySAL | Getis-Ord Gi* | Moran's I</p>
-                        <p class="project-desc">Undergraduate Honors Thesis tracking 24 years (2000–2024) of thermal infrared satellite imagery, proving statistically significant outward migration of thermal hotspots into peri-urban Accra.</p>
-                    </div>
-                </div>
-
-                <!-- Project 8: 15-Minute City Network Isochrones -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <a href="#walk-modal" onclick="openModal('walk-modal')">
-                            <picture><source srcset="images/planes.webp" type="image/webp"><img src="images/planes.png" alt="15-Minute City Network Isochrones and Public Healthcare Accessibility" width="1200" height="1200" loading="lazy" decoding="async"></picture>
-                        </a>
-                    </div>
-                    <div class="project-content">
-                        <h3>15-Minute City Network Isochrones &amp; Healthcare Equity</h3>
-                        <p class="project-tech">OSMnx | NetworkX Dijkstra | Uber H3 | PyDeck 3D</p>
-                        <p class="project-desc">Constructed walkable road graph networks across Greater Accra, discovering that 41.8% of peri-urban residents live outside the 15-minute walking catchment of public healthcare facilities.</p>
-                    </div>
-                </div>
-
-                <!-- Project 9: Traffic Accident Geocoding (GeoNLP) -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <a href="#geonlp-modal" onclick="openModal('geonlp-modal')">
-                            <picture><source srcset="images/accident_heatmap.webp" type="image/webp"><img src="images/accident_heatmap.jpg" alt="Road Traffic Accident Geocoding and Density Heatmap (GeoNLP)" width="1200" height="1200" loading="lazy" decoding="async"></picture>
-                        </a>
-                    </div>
-                    <div class="project-content">
-                        <h3>Road Traffic Accident Geocoding &amp; Hotspots (GeoNLP)</h3>
-                        <p class="project-tech">spaCy NER | Custom Gazetteer | Levenshtein | DBSCAN</p>
-                        <p class="project-desc">Automated NLP and spatial clustering pipeline scraping Ghanaian news articles, geocoding accident descriptions (94.2% entity recall), and mapping spatial crash blackspots.</p>
-                    </div>
-                </div>
-
-                <!-- Project 10: Building Footprint Pretrained Models -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <a href="#pretrained-modal" onclick="openModal('pretrained-modal')">
-                            <picture><source srcset="images/pre_trained.webp" type="image/webp"><img src="images/pre_trained.jpg" alt="Evaluating Pretrained Deep Learning Building Footprint Models in ArcGIS" width="800" height="800" loading="lazy" decoding="async"></picture>
-                        </a>
-                    </div>
-                    <div class="project-content">
-                        <h3>Evaluating Pretrained Deep Learning Models for Buildings</h3>
-                        <p class="project-tech">ArcGIS Living Atlas | Deep Learning | Feature Extraction</p>
-                        <p class="project-desc">Evaluated and benchmarked ArcGIS pretrained models (USA vs. Africa) on African high-resolution imagery, demonstrating the necessity of fine-tuning on regional architectural geometries.</p>
-                    </div>
-                </div>
-
-                <!-- Project 11: Watershed Analysis -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <a href="#watershed-modal" onclick="openModal('watershed-modal')">
-                            <picture><source srcset="images/project3_image.webp" type="image/webp"><img src="images/project3_image.png" alt="Hydrological Catchment and Watershed Delineation in Sawla-Tuna-Kalba" width="1400" height="1299" loading="lazy" decoding="async"></picture>
-                        </a>
-                    </div>
-                    <div class="project-content">
-                        <h3>Watershed &amp; Catchment Delineation: Sawla-Tuna-Kalba</h3>
-                        <p class="project-tech">SRTM DEM | D8 Flow Direction | Hydrological Modeling</p>
-                        <p class="project-desc">Delineated contributing watershed drainage areas for multiple river outlets (1,405 km² to 1,432 km²) using digital elevation models and flow accumulation algorithms for water planning.</p>
-                    </div>
-                </div>
-
-                <!-- Project 12: NDVI Sentinel-2 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <a href="#ndvi-modal" onclick="openModal('ndvi-modal')">
-                            <picture><source srcset="images/project2_image.webp" type="image/webp"><img src="images/project2_image.png" alt="Vegetation Phenology and Seasonal NDVI Monitoring in Google Earth Engine" width="1200" height="1200" loading="lazy" decoding="async"></picture>
-                        </a>
-                    </div>
-                    <div class="project-content">
-                        <h3>Vegetation Phenology &amp; NDVI Monitoring in GEE</h3>
-                        <p class="project-tech">Sentinel-2 MSI | Cloud Masking | GEE API | Phenology</p>
-                        <p class="project-desc">Automated Sentinel-2 surface reflectance processing in Google Earth Engine, calculating seasonal NDVI vegetation health indices across farming communities in Ghana.</p>
+                        <h3>Building Footprint Extraction using Pretrained Models</h3>
+                        <p class="project-tech">ArcGIS | Deep Learning | Feature Extraction | Living Atlas</p>
+                        <p class="project-desc">Evaluated and compared ArcGIS pretrained models (USA vs. Africa) for extracting building footprints from African satellite imagery, highlighting the importance of fine-tuning for regional accuracy.</p>
                     </div>
                 </div>
             </div>
@@ -577,238 +512,256 @@
         </div>
     </section>
 
-    <!-- PROJECT MODALS (Original Human Phrasing) -->
-
-    <!-- Modal 1: VegHealthCNN -->
-    <div id="veghealth-modal" class="modal">
+        <!-- Project Modals (Original Human Phrasing) -->
+    
+    <!-- Modal 1: Flood Risk Mapping -->
+    <div id="project1-modal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('veghealth-modal')">&times;</span>
-            <h2>VegHealthCNN: Spectral-Temporal 1D-CNN for Precision Agriculture</h2>
-            <p><strong>Tools &amp; Technologies:</strong> PyTorch, Sentinel-2 L2A, Spatial Block Cross-Validation, GroupKFold</p>
-            
-            <h3>Project Overview</h3>
-            <p>Smallholder farms across sub-Saharan Africa feature complex crop mosaics and varying soil fertility. Standard blanket fertilizer application leads to nutrient waste and high agricultural runoff. This project uses a custom 1D-Convolutional Neural Network to classify crop health and prescribe variable-rate nitrogen.</p>
-            
-            <h3>Methodology &amp; Data</h3>
-            <p>We ingested multi-temporal Sentinel-2 surface reflectance signatures across Ghana. To prevent data leakage caused by spatial autocorrelation (Tobler's First Law), we evaluated the model using <strong>Spatial Block Cross-Validation</strong> (GroupKFold across 0.01° spatial grids) instead of naive random splitting.</p>
-            
-            <h3>Results &amp; Findings</h3>
-            <ul>
-                <li><strong>98.7% Test Accuracy</strong> across 301 spatially isolated field samples (compared to 99.4% in naive random split with proximity leakage).</li>
-                <li><strong>97.5% Producer Accuracy</strong> specifically on stressed crop pixels.</li>
-                <li>Variable-rate fertilizer prescriptions project an estimated <strong>19.5% reduction in synthetic nitrogen demand</strong> (~4.02 million kg N savings).</li>
-            </ul>
-            
-            <p><strong>GitHub Source:</strong> <a href="https://github.com/Emmanuel-Yerbo/GEOAI/tree/main/01_VegHealthCNN" target="_blank" rel="noopener">Inspect 01_VegHealthCNN Code on GitHub</a></p>
-        </div>
-    </div>
-
-    <!-- Modal 2: FrostWatch Arctic -->
-    <div id="frostwatch-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('frostwatch-modal')">&times;</span>
-            <h2>FrostWatch Arctic: Retrogressive Thaw Slump Segmentation</h2>
-            <p><strong>Distinction:</strong> Top 5 Globally (16.45 AP) in the 2026 Cyber2A Arctic Challenge</p>
-            <p><strong>Tools &amp; Technologies:</strong> UNet++, DeepLabV3+, MAnet, 13-Channel Geomorphometric Tensor</p>
-            
-            <h3>Project Overview</h3>
-            <p>Rapid Arctic warming causes permafrost to thaw into retrogressive thaw slumps, creating abrupt terrain collapse that threatens roads, pipelines, and communities. This project uses deep semantic segmentation to detect thaw slumps from satellite imagery.</p>
-            
-            <h3>Methodology &amp; Input Tensor</h3>
-            <p>We built a three-arm mean-fusion ensemble combining UNet++ (SE-ResNeXt50), DeepLabV3+ (EfficientNet-B5), and MAnet (MiT-B5). Models were fed with an engineered 13-channel geomorphometric input tensor combining optical bands with terrain slope, curvature, and elevation data.</p>
-            
-            <h3>Results &amp; Impact</h3>
-            <ul>
-                <li>Placed <strong>5th internationally (16.45 AP)</strong> among 15 international research teams in the Cyber2A Arctic Challenge.</li>
-                <li>Improved boundary detection recall on small thaw slumps (&lt;500 m²) by +24.3%.</li>
-                <li>Provides an operational terrain hazard screening pipeline for northern infrastructure protection.</li>
-            </ul>
-            
-            <p><strong>GitHub Source:</strong> <a href="https://github.com/Emmanuel-Yerbo/GEOAI/tree/main/02_FrostWatch_Arctic" target="_blank" rel="noopener">Inspect 02_FrostWatch_Arctic Code on GitHub</a></p>
-        </div>
-    </div>
-
-    <!-- Modal 3: Building Extraction -->
-    <div id="building-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('building-modal')">&times;</span>
-            <h2>Nationwide Building Footprint Extraction with SegFormer</h2>
-            <p><strong>Tools &amp; Technologies:</strong> SegFormer-B3, TorchGeo, 30cm Aerial Imagery, ONNX Runtime</p>
-            
-            <h3>Project Overview</h3>
-            <p>Dense informal urbanization across West African metropolitan cores features contiguous corrugated zinc roofs separated by narrow alleys (&lt;1.5m). Off-the-shelf global building models frequently merge entire settlements into large, irregular polygons.</p>
-            
-            <h3>Methodology &amp; Findings</h3>
-            <p>We fine-tuned a SegFormer-B3 architecture using TorchGeo spatial samplers over 30cm aerial orthomosaics across Ghana. Applying boundary distance transform regularization helped separate closely spaced roofs.</p>
-            <ul>
-                <li>Achieved <strong>57.9% Intersection over Union (IoU)</strong> and 84.6% precision, effectively resolving narrow alleys in Accra and Kumasi.</li>
-                <li>Exported optimized ONNX runtime weights for local municipal edge inference.</li>
-            </ul>
-            
-            <p><strong>GitHub Source:</strong> <a href="https://github.com/Emmanuel-Yerbo/GEOAI/tree/main/03_Building_Extraction" target="_blank" rel="noopener">Inspect 03_Building_Extraction Code on GitHub</a></p>
-        </div>
-    </div>
-
-    <!-- Modal 4: Flood U-Net & Grad-CAM -->
-    <div id="flood-unet-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('flood-unet-modal')">&times;</span>
-            <h2>Flood Prediction Using U-Net Model: Akosombo Dam Spillage 2023</h2>
-            <p><strong>Tools &amp; Technologies:</strong> TensorFlow/Keras, U-Net, Grad-CAM, Drone Imagery</p>
-            
-            <h3>Project Overview</h3>
-            <p>The October 2023 Akosombo Dam spillage displaced riverine communities across the Lower Volta Basin in Ghana. This project trains an encoder-decoder U-Net to rapidly segment floodwaters from drone and satellite imagery.</p>
-            
-            <h3>Explainability with Grad-CAM</h3>
-            <p>To avoid black-box errors (such as confusing asphalt road shadows with floodwater), we implemented Gradient-weighted Class Activation Mapping (Grad-CAM). Grad-CAM heatmaps verified that the model made predictions based on specular water reflections and inundated residential parcels.</p>
-            <ul>
-                <li><strong>87.4% Test Accuracy</strong> and <strong>72.1% IoU</strong> on aerial drone imagery.</li>
-                <li>Directly supported emergency disaster mapping during the Lower Volta relief operations.</li>
-            </ul>
-            
-            <p><strong>GitHub Source:</strong> <a href="https://github.com/Emmanuel-Yerbo/GEOAI/tree/main/04_XAI_Flood_GradCAM" target="_blank" rel="noopener">Inspect 04_XAI_Flood_GradCAM Code on GitHub</a></p>
-        </div>
-    </div>
-
-    <!-- Modal 5: SAMGeo -->
-    <div id="samgeo-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('samgeo-modal')">&times;</span>
-            <h2>Image Segmentation with SAMGeo (Zero-Shot Learning)</h2>
-            <p><strong>Tools &amp; Technologies:</strong> Meta SAM, SAMGeo, Vision Transformers (ViT), Python</p>
-            
-            <h3>Project Overview</h3>
-            <p>SAMGeo adapts Meta AI's Segment Anything Model (SAM) for geospatial applications. This project applied SAMGeo to high-resolution satellite imagery covering the University of Cape Coast campus to extract key infrastructure without training labels.</p>
-            
-            <h3>Results &amp; Takeaways</h3>
-            <p>The zero-shot pipeline successfully delineated building boundaries and campus landmarks (Sam Jonah Library, G-Block, Lecture Theater). This demonstrates how foundation models save weeks of manual digitizing for municipal assemblies.</p>
-            
-            <p><strong>GitHub Source:</strong> <a href="https://github.com/Emmanuel-Yerbo/GEOAI/tree/main/06_SAMGeo_Infrastructure" target="_blank" rel="noopener">Inspect 06_SAMGeo_Infrastructure Code on GitHub</a></p>
-        </div>
-    </div>
-
-    <!-- Modal 6: GEE Flood Risk Mapping -->
-    <div id="gee-flood-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('gee-flood-modal')">&times;</span>
+            <span class="close" onclick="closeModal('project1-modal')">&times;</span>
             <h2>Flood Risk Mapping in the Volta Region, Ghana</h2>
-            <p><strong>Tools &amp; Technologies:</strong> Google Earth Engine, MERIT HAND, SRTM 30m, ESA WorldCover, JRC Water</p>
+            <p><strong>Research Period:</strong> May 2023 – August 2023</p>
+            <p><strong>Tools &amp; Technologies:</strong> Google Earth Engine, Remote Sensing, OGC Standards</p>
             
             <h3>Project Overview</h3>
-            <p>Flooding is a recurrent hazard in the Volta Basin. This project built an automated multi-criteria weighted overlay model in Google Earth Engine to evaluate territorial flood susceptibility.</p>
+            <p>Flooding is a significant hazard in many regions, including Ghana's Volta region. This project leverages remote sensing datasets and terrain analysis to assess flood susceptibility. The workflow integrates multiple environmental factors known to influence flooding risk.</p>
             
-            <h3>Methodology &amp; Weights</h3>
+            <h3>Data Sources</h3>
             <ul>
-                <li><strong>Height Above Nearest Drainage (HAND):</strong> 30% weight (hydraulic ponding potential)</li>
-                <li><strong>Elevation &amp; Slope Gradients:</strong> 25% weight (SRTM 30m DEM)</li>
-                <li><strong>Historical Flood Recurrence:</strong> 20% weight (JRC 24-year surface water monthly series)</li>
-                <li><strong>Land Cover / Permeability:</strong> 15% weight (ESA WorldCover 10m)</li>
-                <li><strong>Proximity to Major Channels:</strong> 10% weight</li>
+                <li><strong>ESA WorldCover 2020:</strong> Global land cover classification for LULC data</li>
+                <li><strong>SRTM Global 1 Arc-Second DEM:</strong> Elevation data for deriving slope</li>
+                <li><strong>MERIT Hydro Dataset:</strong> Height Above Nearest Drainage (HAND)</li>
+                <li><strong>JRC Global Surface Water:</strong> Historical surface water for flood frequency</li>
             </ul>
-            <p><strong>Outcome:</strong> Identified 37.5% of the lower basin as high-to-severe flood risk zones, closely matching historical ground records from NADMO.</p>
             
+            <h3>Methodology</h3>
+            <ol>
+                <li><strong>Land Cover Reclassification:</strong> Remapped ESA WorldCover into 4 flood susceptibility classes</li>
+                <li><strong>Elevation Reclassification:</strong> Classified elevation ranges (lower = higher susceptibility)</li>
+                <li><strong>Slope Analysis:</strong> Flatter slopes indicate higher flooding risk</li>
+                <li><strong>Distance to Water:</strong> Calculated proximity to water bodies</li>
+                <li><strong>HAND Analysis:</strong> Lower HAND values = higher flood risk</li>
+                <li><strong>Flood Frequency:</strong> Calculated from 2000–2024 monthly water data</li>
+                <li><strong>Weighted Overlay:</strong> Combined all layers with scientifically-derived weights</li>
+            </ol>
+            
+            <h3>Weighting Model</h3>
+            <ul>
+                <li>Flood Frequency: 2.5</li>
+                <li>Land Cover: 2.0</li>
+                <li>Elevation: 2.5</li>
+                <li>Slope: 2.5</li>
+                <li>Distance to Open Water: 1.5</li>
+                <li>HAND: 1.5</li>
+            </ul>
+            
+            <p><strong>Impact:</strong> This model provides local authorities with data-driven flood risk assessments for emergency planning and resource allocation.</p>
             <p><strong>GitHub Source:</strong> <a href="https://github.com/Emmanuel-Yerbo/GEOAI/tree/main/07_GEE_Flood_Susceptibility" target="_blank" rel="noopener">Inspect 07_GEE_Flood_Susceptibility Code on GitHub</a></p>
         </div>
     </div>
 
-    <!-- Modal 7: LST Urban Heat Island -->
-    <div id="lst-modal" class="modal">
+    <!-- Modal 2: NDVI Sentinel-2 -->
+    <div id="project2-modal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('lst-modal')">&times;</span>
-            <h2>24-Year Urban Heat Island Dynamics in Greater Accra</h2>
-            <p><strong>Academic Level:</strong> Undergraduate Honors Thesis, Department of Geography &amp; Regional Planning, UCC</p>
-            <p><strong>Tools &amp; Technologies:</strong> Landsat Thermal Infrared (2000–2024), PySAL, Getis-Ord Gi*, Global Moran's I</p>
+            <span class="close" onclick="closeModal('project2-modal')">&times;</span>
+            <h2>NDVI Calculation Using Sentinel-2 Imagery in Google Earth Engine</h2>
+            <p><strong>Tools &amp; Technologies:</strong> Google Earth Engine, Sentinel-2, Remote Sensing</p>
             
             <h3>Project Overview</h3>
-            <p>Rapid urban sprawl across Greater Accra has replaced natural vegetation and agricultural lands with asphalt and concrete surfaces. This research retrieved land surface temperature across 24 years of Landsat Collection 2 imagery to assess thermal distress.</p>
+            <p>NDVI (Normalized Difference Vegetation Index) is calculated from Sentinel-2 satellite imagery using Google Earth Engine. The workflow includes cloud masking, compositing images over a date range, and visualizing both true color composites and NDVI layers.</p>
             
-            <h3>Key Findings</h3>
+            <h3>What is NDVI?</h3>
+            <p>NDVI stands for Normalized Difference Vegetation Index. It is a widely used remote sensing index that measures the presence and condition of green vegetation on Earth's surface.</p>
             <ul>
-                <li>Proved statistically significant (p &lt; 0.001) spatial autocorrelation of thermal extremes, with Moran's I increasing from 0.482 in 2000 to 0.647 in 2024.</li>
-                <li>Documented the outward migration of intense thermal hotspots into expanding northern peri-urban corridors (Adenta, Ga East).</li>
-                <li>Provides empirical backing for urban greening policies and climate-resilient spatial structure plans.</li>
+                <li><strong>Values close to +1 (0.8 - 1):</strong> Dense, healthy green vegetation</li>
+                <li><strong>Values near 0:</strong> Bare soil, urban areas, or sparse vegetation</li>
+                <li><strong>Negative values:</strong> Water, clouds, or snow</li>
             </ul>
             
-            <p><strong>GitHub Source:</strong> <a href="https://github.com/Emmanuel-Yerbo/GEOAI/tree/main/08_PySAL_LST_Hotspots" target="_blank" rel="noopener">Inspect 08_PySAL_LST_Hotspots Code on GitHub</a></p>
-        </div>
-    </div>
-
-    <!-- Modal 8: 15-Minute City Network Isochrones -->
-    <div id="walk-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('walk-modal')">&times;</span>
-            <h2>15-Minute City Network Isochrones &amp; Healthcare Accessibility</h2>
-            <p><strong>Distinction:</strong> 2nd Place in the Esri Map4Impact Hackathon 2.0</p>
-            <p><strong>Tools &amp; Technologies:</strong> OSMnx, NetworkX Dijkstra, Uber H3 Hexagons, PyDeck 3D WebGL</p>
+            <h3>NDVI Formula</h3>
+            <p><code>NDVI = (NIR - Red) / (NIR + Red)</code></p>
+            <p>Where NIR = Near Infrared band (B8) and Red = Red visible band (B4)</p>
             
-            <h3>Project Overview</h3>
-            <p>Evaluated pedestrian access to public health clinics across the Greater Accra Metropolitan Area using topological walkable road networks from OpenStreetMap.</p>
-            
-            <h3>Results &amp; Findings</h3>
+            <h3>Applications</h3>
             <ul>
-                <li>Constructed 5, 10, and 15-minute walking catchment isochrones using network distance rather than misleading Euclidean straight-line buffers.</li>
-                <li>While 93.8% of residents in the urban core can reach a primary clinic within 15 minutes, <strong>41.8% of peri-urban residents remain in healthcare transit deserts</strong>.</li>
-                <li>Collaborated with spatial planning guidelines to recommend optimized health post locations along transit corridors.</li>
+                <li><strong>Agriculture:</strong> Monitoring crop health and detecting stress</li>
+                <li><strong>Forestry:</strong> Assessing forest cover and biomass</li>
+                <li><strong>Environmental Monitoring:</strong> Tracking droughts and desertification</li>
+                <li><strong>Urban Planning:</strong> Assessing green spaces and vegetation</li>
+                <li><strong>Climate Studies:</strong> Understanding vegetation responses to climate change</li>
             </ul>
             
-            <p><strong>GitHub Source:</strong> <a href="https://github.com/Emmanuel-Yerbo/GEOAI/tree/main/09_Network_Accessibility_15MinCity" target="_blank" rel="noopener">Inspect 09_Network_Accessibility_15MinCity Code on GitHub</a></p>
+            <p><strong>Impact:</strong> This analysis supports evidence-based environmental management and agricultural monitoring across Ghana.</p>
+            <p><strong>GitHub Source:</strong> <a href="https://github.com/Emmanuel-Yerbo/GEOAI" target="_blank" rel="noopener">Inspect Earth Observation Suite on GitHub</a></p>
         </div>
     </div>
 
-    <!-- Modal 9: Traffic Accident Geocoding (GeoNLP) -->
-    <div id="geonlp-modal" class="modal">
+    <!-- Modal 3: Watershed Analysis -->
+    <div id="project3-modal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('geonlp-modal')">&times;</span>
-            <h2>Road Traffic Accident Geocoding &amp; Spatial Clustering (GeoNLP)</h2>
-            <p><strong>Tools &amp; Technologies:</strong> Python, spaCy NER, Custom Ghanaian Gazetteer, Levenshtein, DBSCAN</p>
-            
-            <h3>Project Overview</h3>
-            <p>Road accident statistics in developing nations are frequently delayed and lack accurate geographic coordinates. This project built an end-to-end NLP and spatial data science pipeline to scrape online Ghanaian news portals, extract crash locations, and map accident blackspots.</p>
-            
-            <h3>Methodology &amp; Results</h3>
-            <ul>
-                <li>Extracted location entities using a custom Ghanaian gazetteer with 94.2% entity recall.</li>
-                <li>Resolved ambiguous and misspelled town names using Levenshtein distance fuzzy matching (91.8% match rate).</li>
-                <li>Applied DBSCAN spatial density clustering to identify 18 high-risk highway crash corridors.</li>
-            </ul>
-            
-            <p><strong>GitHub Source:</strong> <a href="https://github.com/Emmanuel-Yerbo/GEOAI/tree/main/12_GeoNLP_Spatial_Accident_Geocoding" target="_blank" rel="noopener">Inspect 12_GeoNLP_Spatial_Accident_Geocoding Code on GitHub</a></p>
-        </div>
-    </div>
-
-    <!-- Modal 10: Pretrained Models -->
-    <div id="pretrained-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('pretrained-modal')">&times;</span>
-            <h2>Building Footprint Extraction using Pretrained Models</h2>
-            <p><strong>Tools &amp; Technologies:</strong> ArcGIS Pro, Deep Learning, Feature Extraction, Living Atlas</p>
-            
-            <h3>Project Overview</h3>
-            <p>Compared the performance of ArcGIS pretrained building extraction models (USA vs. Africa) on satellite imagery covering Ghanaian settlements. Found that models trained on Western suburban layouts struggle with dense informal roofs, underscoring the critical importance of fine-tuning with local training data.</p>
-        </div>
-    </div>
-
-    <!-- Modal 11: Watershed Analysis -->
-    <div id="watershed-modal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('watershed-modal')">&times;</span>
+            <span class="close" onclick="closeModal('project3-modal')">&times;</span>
             <h2>Watershed Per Outlet Analysis: Sawla-Tuna-Kalba District, Ghana</h2>
-            <p><strong>Tools &amp; Technologies:</strong> SRTM DEM, Hydrological Modeling, Flow Accumulation, ArcGIS</p>
+            <p><strong>Project Aim:</strong> Estimate total drainage area (watershed) contributing to each outlet</p>
             
             <h3>Project Overview</h3>
-            <p>Delineated contributing drainage catchments for multiple stream outlets across the Sawla-Tuna-Kalba District. Calculated total basin areas ranging from 1,405 km² to 1,432 km² to support district-level water resource management and flood preparedness.</p>
+            <p>This project focuses on delineating watershed areas for various outlets within the Sawla-Tuna-Kalba District. A watershed is an area of land that drains all rainfall and streams to a common outlet. Understanding watershed boundaries is crucial for water resource management, flood risk assessment, and sustainable environmental planning.</p>
+            
+            <h3>Data &amp; Methods</h3>
+            <p><strong>Data Source:</strong> SRTM Digital Elevation Model (DEM)</p>
+            <p><strong>Methodology Steps:</strong></p>
+            <ol>
+                <li><strong>DEM Fill:</strong> Remove spurious depressions</li>
+                <li><strong>Flow Direction:</strong> Calculate water flow from each cell</li>
+                <li><strong>Flow Accumulation:</strong> Identify stream networks</li>
+                <li><strong>Reclassify:</strong> Extract river channels using flow accumulation threshold</li>
+                <li><strong>Outlet Creation:</strong> Generate outlets along the stream network</li>
+                <li><strong>Watershed Delineation:</strong> Process watersheds per outlet</li>
+            </ol>
+            
+            <h3>Results</h3>
+            <table style="width:100%; border-collapse:collapse; margin: 1rem 0;">
+                <thead>
+                    <tr style="background:#1a5f7a; color:#fff;">
+                        <th style="padding:8px; border:1px solid #ddd; text-align:left;">Catchment</th>
+                        <th style="padding:8px; border:1px solid #ddd; text-align:right;">Watershed Area (km²)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td style="padding:8px; border:1px solid #ddd;">A</td><td style="padding:8px; border:1px solid #ddd; text-align:right;">1,405</td></tr>
+                    <tr><td style="padding:8px; border:1px solid #ddd;">B</td><td style="padding:8px; border:1px solid #ddd; text-align:right;">186</td></tr>
+                    <tr><td style="padding:8px; border:1px solid #ddd;">C</td><td style="padding:8px; border:1px solid #ddd; text-align:right;">1,432</td></tr>
+                    <tr><td style="padding:8px; border:1px solid #ddd;">D</td><td style="padding:8px; border:1px solid #ddd; text-align:right;">146</td></tr>
+                </tbody>
+            </table>
+            
+            <h3>Applications</h3>
+            <ul>
+                <li><strong>Water Resource Allocation:</strong> Efficient distribution among communities</li>
+                <li><strong>Flood Risk Management:</strong> Predicting flood-prone areas</li>
+                <li><strong>Sustainable Water Management:</strong> Long-term water availability planning</li>
+            </ul>
+            
+            <p><strong>Impact:</strong> This analysis enables informed water resource decisions and disaster preparedness for the district.</p>
+            <p><strong>GitHub Source:</strong> <a href="https://github.com/Emmanuel-Yerbo/GEOAI/tree/main/18_Hydrological_Geomorphometry_Strahler" target="_blank" rel="noopener">Inspect Hydrological Modeling on GitHub</a></p>
         </div>
     </div>
 
-    <!-- Modal 12: NDVI Sentinel-2 -->
-    <div id="ndvi-modal" class="modal">
+    <!-- Modal 4: SAMGeo -->
+    <div id="project4-modal" class="modal">
         <div class="modal-content">
-            <span class="close" onclick="closeModal('ndvi-modal')">&times;</span>
-            <h2>NDVI Vegetation Monitoring with Sentinel-2 in Google Earth Engine</h2>
-            <p><strong>Tools &amp; Technologies:</strong> Sentinel-2 MSI, Google Earth Engine JavaScript API, Cloud Masking</p>
+            <span class="close" onclick="closeModal('project4-modal')">&times;</span>
+            <h2>Image Segmentation with SAMGeo (GeoAI)</h2>
+            <p><strong>Project Goal:</strong> Segment satellite imagery to identify key campus landmarks</p>
             
             <h3>Project Overview</h3>
-            <p>Automated cloud-masked Sentinel-2 composite generation and Normalized Difference Vegetation Index (NDVI) calculations to track seasonal agricultural vegetation vigor and detect drought stress across farming communities in Ghana.</p>
+            <p>This project applies GeoAI to segment an image showing the Sam Jonah Library, G-Block, and Lecture Theater at the University of Cape Coast, Ghana. Using advanced image segmentation techniques, we accurately identify and separate these landmarks from satellite/aerial imagery.</p>
+            
+            <h3>What is Image Segmentation?</h3>
+            <p>Image segmentation divides satellite or aerial images into meaningful groups of pixels (segments). This simplifies the image, making it easier to identify and analyze specific objects. Segmentation relies on characteristics such as size, texture, and shape to distinguish different regions.</p>
+            
+            <h3>About SAMGeo</h3>
+            <p>SAMGeo is a Python library designed to adapt Meta AI's Segment Anything Model (SAM) for remote sensing. It is built on Vision Transformers (ViTs), which use attention mechanisms to concentrate on relevant image parts while ignoring less important details.</p>
+            
+            <h3>Key Feature: Zero-Shot Learning</h3>
+            <p>One of SAMGeo's most impressive features is automatic segmentation <strong>without additional training</strong>. The pre-trained models (vit_h, vit_l, vit_b) are already familiar with segmenting diverse images, enabling accurate results on new, unseen remote sensing data.</p>
+            
+            <h3>How It Works</h3>
+            <ol>
+                <li>Input satellite/aerial image of UCC campus</li>
+                <li>Initialize SAMGeo with a pre-trained Vision Transformer model</li>
+                <li>SAMGeo processes and segments the image into meaningful regions</li>
+                <li>Results highlight landmarks (Library, G-Block, Lecture Theater)</li>
+            </ol>
+            
+            <p><strong>Impact:</strong> This zero-shot learning approach enables rapid object detection and classification in remote sensing without specialized training data.</p>
+            <p><strong>GitHub Source:</strong> <a href="https://github.com/Emmanuel-Yerbo/GEOAI/tree/main/06_SAMGeo_Infrastructure" target="_blank" rel="noopener">Inspect 06_SAMGeo_Infrastructure Code on GitHub</a></p>
+        </div>
+    </div>
+
+    <!-- Modal 5: Flood Prediction U-Net & Grad-CAM -->
+    <div id="project5-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project5-modal')">&times;</span>
+            <h2>Flood Prediction Using U-Net Model: Akosombo Dam Spillage 2023</h2>
+            <p><strong>Focus:</strong> Deep learning for automatic flood area prediction</p>
+            
+            <h3>Project Overview</h3>
+            <p>This project applies deep learning to automatically segment flooded regions from satellite/aerial images. Accurate flood mapping is critical for emergency response and resource allocation. The case study focuses on the Akosombo Dam spillage event in Ghana (2023).</p>
+            
+            <h3>Dataset &amp; Preprocessing</h3>
+            <p><strong>Dataset Source:</strong> Kaggle Flood Segmentation Dataset with labeled flood images and ground truth masks</p>
+            <p><strong>Data Preprocessing:</strong></p>
+            <ul>
+                <li>Normalized and resized images to consistent dimensions</li>
+                <li>Data augmentation (rotations, flips, brightness adjustments)</li>
+                <li>Training/Testing split: 70% / 30%</li>
+            </ul>
+            
+            <h3>Model Architecture: U-Net</h3>
+            <p>U-Net is a powerful CNN specifically designed for image segmentation with an encoder-decoder framework:</p>
+            <ul>
+                <li><strong>Encoder (Contracting Path):</strong> Extracts hierarchical features through convolution and max-pooling</li>
+                <li><strong>Decoder (Expanding Path):</strong> Restores spatial resolution through upsampling</li>
+                <li><strong>Skip Connections:</strong> Preserve spatial information and fine details like flood boundaries</li>
+                <li><strong>Dropout Layers:</strong> Reduce overfitting and improve generalization</li>
+            </ul>
+            
+            <h3>Model Performance</h3>
+            <ul>
+                <li><strong>Test Accuracy: 87%</strong> - Percentage of correctly predicted pixels</li>
+                <li><strong>Intersection Over Union (IoU): 72%</strong> - Agreement between predicted and actual flood extents</li>
+                <li><strong>Test Loss: 30%</strong> - Acceptable range for this complex task</li>
+            </ul>
+            
+            <h3>Explainability with Grad-CAM</h3>
+            <p>To enhance model interpretability, Gradient-weighted Class Activation Mapping (Grad-CAM) produces heatmaps highlighting regions most influential in predictions. Red areas show where the model focused to identify flooded zones, increasing confidence in predictions.</p>
+            
+            <h3>Tools &amp; Frameworks</h3>
+            <ul>
+                <li><strong>TensorFlow:</strong> Building and training the U-Net model</li>
+                <li><strong>Keras API:</strong> Simplified model construction</li>
+                <li><strong>OpenCV &amp; NumPy:</strong> Image preprocessing</li>
+                <li><strong>Matplotlib:</strong> Visualization and Grad-CAM heatmaps</li>
+            </ul>
+            
+            <p><strong>Impact:</strong> This AI-powered approach significantly speeds up flood assessment compared to manual methods, supporting rapid disaster response.</p>
+            <p><strong>GitHub Source:</strong> <a href="https://github.com/Emmanuel-Yerbo/GEOAI/tree/main/04_XAI_Flood_GradCAM" target="_blank" rel="noopener">Inspect 04_XAI_Flood_GradCAM Code on GitHub</a></p>
+        </div>
+    </div>
+
+    <!-- Modal 6: Building Footprint Pretrained Models -->
+    <div id="project6-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('project6-modal')">&times;</span>
+            <h2>Building Footprint Extraction using Pretrained Models</h2>
+            
+            <h3>Overview</h3>
+            <p>A <strong>building footprint</strong> is a vectorized 2-dimensional polygon representing the physical outline of a building’s exterior walls on a map.</p>
+            
+            <h3>What are Pretrained Models?</h3>
+            <p>A pretrained model is a machine learning algorithm previously trained on a large dataset for a specific task, which can be reused or fine-tuned for related problems. In geospatial analysis, ArcGIS offers various pretrained models, including task-specific models and generalized vision-language models. These models are hosted on the <strong>ArcGIS Living Atlas of the World</strong>.</p>
+            
+            <h3>Feature Extraction</h3>
+            <p>Feature extraction involves automatically identifying and isolating objects like roads, buildings, water bodies, or vegetation from satellite or aerial imagery using deep learning techniques.</p>
+            
+            <h3>Experiment &amp; Findings</h3>
+            <p>An experiment was conducted using two ArcGIS pretrained models to extract building footprints for a location in Africa:</p>
+            <ol>
+                <li><strong>Building Extraction Model (USA)</strong></li>
+                <li><strong>Building Extraction Model (Africa)</strong></li>
+            </ol>
+            
+            <h4>Key Observations</h4>
+            <p>Surprisingly, the <strong>USA model performed better</strong> in extracting building footprints for this specific African location.</p>
+            <ul>
+                <li><strong>Map A</strong> shows the original satellite image.</li>
+                <li><strong>Map B</strong> displays the extracted building footprints using the model.</li>
+            </ul>
+            
+            <p><strong>Conclusion:</strong> It is evident that not all buildings were detected. This highlights a crucial principle of machine learning: pretrained models perform best when applied to data similar to what they were trained on. This suggests that <strong>fine-tuning the models with local data is necessary</strong> to improve extraction accuracy and reliability for specific regions.</p>
+            
+            <h3>Why Use Pretrained Models?</h3>
+            <p>Pretrained models save significant time and computational resources compared to training a model from scratch, making them incredibly valuable tools for geospatial applications and rapid analysis.</p>
+            <p><strong>GitHub Source:</strong> <a href="https://github.com/Emmanuel-Yerbo/GEOAI/tree/main/03_Building_Extraction" target="_blank" rel="noopener">Inspect Building Footprint Extraction on GitHub</a></p>
         </div>
     </div>
 

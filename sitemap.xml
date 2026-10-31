@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://emmanuelyerbo.github.io/emmanuelyerbo/</loc>
-    <lastmod>2026-10-30</lastmod>
+    <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -11,24 +11,32 @@
       <image:title>Emmanuel Yerbo - GIS Specialist and Geospatial Data Analyst</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://emmanuelyerbo.github.io/emmanuelyerbo/images/veghealth_architecture.png</image:loc>
-      <image:title>VegHealthCNN Precision Agriculture Architecture</image:title>
+      <image:loc>https://emmanuelyerbo.github.io/emmanuelyerbo/images/project1_image.jpg</image:loc>
+      <image:title>Flood Risk Mapping in the Volta Region, Ghana</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://emmanuelyerbo.github.io/emmanuelyerbo/images/frostwatch_audit.jpg</image:loc>
-      <image:title>FrostWatch Arctic Thaw Slump Semantic Segmentation</image:title>
+      <image:loc>https://emmanuelyerbo.github.io/emmanuelyerbo/images/project2_image.png</image:loc>
+      <image:title>NDVI Vegetation Health Calculation Using Sentinel-2 in Google Earth Engine</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://emmanuelyerbo.github.io/emmanuelyerbo/images/building_eval.png</image:loc>
-      <image:title>Nationwide Building Footprint Extraction with SegFormer</image:title>
+      <image:loc>https://emmanuelyerbo.github.io/emmanuelyerbo/images/project3_image.png</image:loc>
+      <image:title>Watershed Per Outlet Hydrological Delineation in Sawla-Tuna-Kalba District</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://emmanuelyerbo.github.io/emmanuelyerbo/images/gradcam_flood.png</image:loc>
-      <image:title>Akosombo Flood Prediction and Grad-CAM Explainability</image:title>
+      <image:loc>https://emmanuelyerbo.github.io/emmanuelyerbo/images/project4_image.png</image:loc>
+      <image:title>SAMGeo Zero-Shot Campus Landmark Segmentation on UCC Campus</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://emmanuelyerbo.github.io/emmanuelyerbo/images/project5_image.png</image:loc>
+      <image:title>Flood Prediction Using U-Net and Grad-CAM Explainability: Akosombo Dam Spillage</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://emmanuelyerbo.github.io/emmanuelyerbo/images/pre_trained.jpg</image:loc>
+      <image:title>Building Footprint Extraction Using Pretrained Models: USA vs Africa</image:title>
     </image:image>
     <image:image>
       <image:loc>https://emmanuelyerbo.github.io/emmanuelyerbo/images/Road%20Density.jpg</image:loc>
-      <image:title>24-Year Urban Heat Island Dynamics and PySAL Hotspots</image:title>
+      <image:title>Road Intersection Density Analysis in Kumasi, Ghana</image:title>
     </image:image>
   </url>
 </urlset>
